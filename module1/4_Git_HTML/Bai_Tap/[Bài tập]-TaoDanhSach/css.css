@@ -1,0 +1,9 @@
+ul{
+    font-weight: bold;
+    font-family: Lato;
+    font-size: 20px;
+}
+
+ul li ol li{
+    font-weight: normal;
+}
