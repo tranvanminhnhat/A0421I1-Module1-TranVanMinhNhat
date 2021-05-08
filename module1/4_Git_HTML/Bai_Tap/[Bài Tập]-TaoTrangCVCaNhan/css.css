@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.CV{
+    margin: 0 auto;
+    padding: 0;
+    font-family: Lato;
+    width: 65%;
+
+}
+/*----------------------------------------------------*/
+/*----------------------Title-------------------------*/
+/*----------------------------------------------------*/
+.CV--title{
+    position: relative;
+    height: 350px;
+    width: 100%;
+    background: green;
+    border-bottom: solid 2px yellow;
+}
+
+.CV--title .CV__img{
+    position: absolute;
+    width: 25%;
+    height: 70%;
+    border: solid 3px greenyellow;
+    margin-top: 40px;
+    border-radius: 0 100px 100px 0;
+    float: left;
+}
+
+.CV--title .CV__h1{
+    position: absolute;
+    margin-top: 85px;
+    margin-left: 485px;
+    font-family: Lato;
+    font-size: 42px;
+}
+
+.CV--title .CV__h2{
+    position: absolute;
+    margin-top: 135px;
+    margin-left: 503px;
+}
+
+/*--------------------------------------------------*/
+/*---------------main-information-------------------*/
+/*--------------------------------------------------*/
+
+.CV--main_info{
+    position: relative;
+    width: 40%;
+    height: 950px;
+    background: green;
+    float: left;
+    border-right: solid 2px yellow;
+}
+/*--------------------persional-information-----------------*/
+
+.CV--main_info .CV--personal_info{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.CV--main_info .CV--personal_info ul{
+    list-style: none;
+}
+
+.CV--main_info .CV--personal_info ul .CV__h3{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.CV--main_info .CV--personal_info ul li{
+    font-size: 20px;
+    font-family: "Droid Serif";
+    line-height: 30px;
+}
+
+/*-----------------------languages-------------------------*/
+
+.CV--main_info .CV--language{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 250px;
+}
+
+.CV--main_info .CV--language ul{
+    list-style: none;
+}
+
+.CV--main_info .CV--language ul .CV__h3{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.CV--main_info .CV--language ul li{
+    font-size: 20px;
+    font-family: "Droid Serif";
+    line-height: 30px;
+}
+
+/*------------------------skills------------------------------*/
+
+.CV--main_info .CV--skills{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 397px;
+}
+
+.CV--main_info .CV--skills ul{
+    list-style: none;
+}
+
+.CV--main_info .CV--skills ul .CV__h3{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.CV--main_info .CV--skills ul li{
+    font-size: 20px;
+    font-family: "Droid Serif";
+    line-height: 30px;
+}
+
+/*------------------------Hobbies---------------------------*/
+
+.CV--main_info .CV--Hobbies{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 665px;
+}
+
+.CV--main_info .CV--Hobbies ul{
+    list-style: none;
+}
+
+.CV--main_info .CV--Hobbies ul .CV__h3{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.CV--main_info .CV--Hobbies ul li{
+    font-size: 20px;
+    font-family: "Droid Serif";
+    line-height: 30px;
+}
+
+/*----------------------------------------------------------*/
+/*----------------------Job-Purpose-------------------------*/
+/*----------------------------------------------------------*/
+
+.CV--Job{
+    position: relative;
+    width: 59.82%;
+    height: 950px;
+    background: green;
+    float: right;
+}
+
+/*-----------------------Career-goals----------------------*/
+
+.CV--Job .CV--job_purpose{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.CV--Job .CV--job_purpose ul{
+    list-style: none;
+}
+
+.CV--Job .CV--job_purpose ul .CV__h3{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.CV--Job .CV--job_purpose ul li{
+    font-size: 20px;
+    font-family: "Droid Serif";
+    line-height: 30px;
+}
+
+/*-----------------------education--------------------------*/
+.CV--Job .CV--education{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 280px;
+}
+
+.CV--Job .CV--education ul{
+    list-style: none;
+}
+
+.CV--Job .CV--education ul .CV__h3{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.CV--Job .CV--education ul li{
+    font-size: 20px;
+    font-family: "Droid Serif";
+    line-height: 30px;
+}
+
+
+/*-----------------------Experience-----------------------------*/
+.CV--Job .CV--experience{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 490px;
+}
+
+.CV--Job .CV--experience ul{
+    list-style: none;
+}
+
+.CV--Job .CV--experience ul .CV__h3{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.CV--Job .CV--experience ul li{
+    font-size: 20px;
+    font-family: "Droid Serif";
+    line-height: 30px;
+}
