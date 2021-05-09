@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register students</title>
+    <style>
+        .register_form{
+            width: 650px;
+            height: 493px;
+            background: yellow;
+            position: relative;
+        }
+        h1{
+            width: 95%;
+            height: 60px;
+            background: aquamarine;
+            margin-left: 15px;
+            margin-top: 10px;
+            text-align: center;
+            position: absolute;
+        }
+
+        .register_form--inside{
+            position: absolute;
+            margin-top: 88px;
+            margin-left: 104px;
+        }
+        label{
+            font-family: Lato;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .fullname--text{
+            margin-left: 15px;
+            width: 315px;
+            height: 30px;
+            margin-bottom: 15px;
+        }
+        .birthday--text{
+            margin-left: 19px;
+            width: 315px;
+            height: 30px;
+            margin-bottom: 15px;
+        }
+        .gender{
+            margin-left: 104px;
+            margin-bottom: 15px;
+        }
+        .address--textarea{
+            margin-left: 109px;
+            height: 30px;
+            width: 315px;
+            margin-bottom: 15px;
+        }
+        .address{
+            position: relative;
+        }
+        .address__label{
+            position: absolute;
+            padding-bottom: 10px;
+        }
+        .class__select{
+            margin-left: 41px;
+            width: 100px;
+            height: 30px;
+            margin-bottom: 15px;
+        }
+        .email--text{
+            margin-left: 47px;
+            width: 315px;
+            height: 30px;
+            margin-bottom: 15px;
+        }
+        .phone--text{
+            margin-left: 38px;
+            margin-bottom: 15px;
+            width: 315px;
+            height: 30px;
+        }
+        .btn{
+            width: 100px;
+            height: 30px;
+            background: aquamarine;
+            border: 0;
+            border-radius: 7px;
+        }
+        .submit{
+            margin-left: 118px;
+        }
+    </style>
+</head>
+<body>
+    <div class="register_form">
+        <form action="#" name="register" class="register">
+            <h1>Register students</h1>
+            <div class="register_form--inside">
+                <div class="fullname">
+                    <label for="fullname">Fullname</label>
+                    <input type="text" name="fullname" id="fullname" class="fullname--text">
+                </div>
+                <div class="Birthday">
+                    <label for="birthday">Birthday</label>
+                    <input type="text" name="birthday" id="birthday" class="birthday--text">
+                </div>
+                <div class="gender">
+                    <input type="radio" name="gender_male" id="gender_male">
+                    <label for="gender_male">Male</label>
+                    <input type="radio" name="gender_female" id="gender_female">
+                    <label for="gender_female">Female</label>
+                </div>
+                <div class="address">
+                    <label for="address" class="address__label">Address</label>
+                    <textarea rows="5" cols="40" name="address" id="address" class="address--textarea"></textarea>
+                </div>
+                <div class="class">
+                    <label for="class">Grade</label>
+                    <select name="class" id="class" class="class__select">
+                        <option>Grade 10</option>
+                        <option>Grade 11</option>
+                        <option>Grade 12</option>
+                    </select>
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" class="email--text">
+                </div>
+                <div class="phone">
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="phone" class="phone--text">
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Register" class="btn">
+                    <input type="submit" value="Reset" class="btn">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

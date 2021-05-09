@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tell me about your hobbies</title>
+    <style>
+        .hobby_form_over{
+            position: relative;
+            background: lightskyblue;
+            width: 900px;
+            height: 450px;
+        }
+        .hobby_form_inside{
+            position: absolute;
+            margin-left: 1%;
+            margin-top: 1%;
+            background: white;
+            width: 98%;
+            height: 96%;
+        }
+        h1{
+            padding: 0 20px;
+            background: orangered;
+            width: 93%;
+            margin-left: 1%;
+            text-align: center;
+            color: white;
+            font-weight: lighter;
+        }
+        .lable{
+            font-size: 30px;
+            padding-left: 155px;
+            font-family: Lato;
+            color: cornflowerblue;
+            margin-right: 10px;
+        }
+        .text{
+            height: 32px;
+            width: 420px;
+            box-shadow: 5px 5px 9px 1px black;
+        }
+        #email{
+            margin-left: 47px;
+        }
+        .checkbox{
+            padding-left: 264px;
+        }
+
+        .checkbox1{
+            margin-left: 80px;
+        }
+        .checkbox2{
+            margin-left: 94px;
+        }
+        .checkbox3{
+            margin-left: 33px;
+        }
+        .checkbox4{
+            margin-left: 54px;
+        }
+        .checkbox5{
+            margin-left: 93px;
+        }
+
+        .btn{
+            width: 140px;
+            height: 40px;
+            border-radius: 10px;
+            color: white;
+            background: cornflowerblue;
+            margin-left: 18px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="hobby_form_over">
+        <form action="#" name="hobbies" class="hobby_form">
+            <div class="hobby_form_inside">
+                <h1>What are your hobbies?</h1>
+                <label for="fullname" class="lable">Fullname</label>
+                <input type="text" name="fullname" id="fullname" class="text"><br><br>
+                <label for="email" class="lable">Email</label>
+                <input type="text" name="email" id="email" class="text"><br><br>
+                <label class="lable">Hobbies</label>
+                <input type="checkbox" name="hobby1" id="hobby1" class="checkbox1">Sport
+                <input type="checkbox" name="hobby2" id="hobby2" class="checkbox1">Music
+                <input type="checkbox" name="hobby3" id="hobby3" class="checkbox1">Book<br><br>
+                <div class="checkbox">
+                    <input type="checkbox" name="hobby4" id="hobby4" class="checkbox2">Surf the web
+                    <input type="checkbox" name="hobby5" id="hobby5" class="checkbox3">Play game
+                    <input type="checkbox" name="hobby6" id="hobby6" class="checkbox4">Movie<br><br>
+                    <input type="checkbox" name="hobby7" id="hobby7" class="checkbox5">Travel<br><br>
+                    <input type="submit" value="Send information" class="btn">
+                    <input type="submit" value="Reset" class="btn">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
