@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search on google</title>
+    <style>
+        .search{
+            font-family: Lato;
+            width: 40%;
+            border: solid 3px green;
+            position: relative;
+            height: 220px;
+            background: chartreuse;
+        }
+        label{
+            position: absolute;
+            font-size: 40px;
+            margin-left: 323px;
+            margin-top: 40px;
+        }
+        .search--text{
+            width: 90%;
+            font-size: 30px;
+            margin-top: 82px;
+            margin-left: 4.5%;
+            border: solid 2px green;
+            border-radius: 10px;
+        }
+        .btn{
+            background: green;
+            margin: 5px 330px;
+            width: 112px;
+            height: 40px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://www.google.com.vn/search" class="search">
+        <label for="search">Google</label><br>
+        <input type="text" name="q" id="search" class="search--text"><br>
+        <input type="submit" value="Search here" class="btn">
+    </form>
+</body>
+</html>
