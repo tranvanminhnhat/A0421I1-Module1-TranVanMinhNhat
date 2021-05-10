@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <style>
+        *{
+            font-family: Lato;
+            padding: 0;
+            margin: 10px auto;
+        }
+        .register_form{
+            border: solid 2px lightskyblue;
+            width: 400px;
+        }
+        .register_form--all_content{
+            padding: 30px;
+        }
+        label{
+            font-size: 25px;
+            display: block;
+            margin-bottom: 5px;
+            margin-right: 10px;
+        }
+        .textbox{
+            width: 335px;
+            height: 40px;
+        }
+        .gender{
+            display: inline;
+        }
+        .gender--label{
+            display: inline;
+        }
+        .btn{
+            width: 100px;
+            height: 30px;
+            font-weight: bold;
+        }
+        .submit{
+            margin-left: 120px;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://demo.codegym.vn/6/registration_form/register.php" method="post" class="register_form">
+        <div class="register_form--all_content">
+            <div class="fullname">
+                <label for="fullname">Fullname:</label>
+                <input type="text" name="fullname" id="fullname" class="textbox">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" class="textbox">
+            </div>
+            <div>
+                <label for="phonenumbers">Phone numbers</label>
+                <input type="text" name="phonenumbers" id="phonenumbers" class="textbox">
+            </div>
+            <div class="gender">
+                <div>
+                    <input type="radio" name="gender_male" id="gender_male">
+                    <label for="gender_male" class="gender--label">Male</label>
+                    <input type="radio" name="gender_female" id="gender_female">
+                    <label for="gender_female" class="gender--label">Female</label>
+                </div>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Register" class="btn">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
