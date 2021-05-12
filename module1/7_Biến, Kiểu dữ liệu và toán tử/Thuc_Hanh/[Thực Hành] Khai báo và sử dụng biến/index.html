@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let i = 'nhat';
+        let f = 20.5; //kiểu number
+        let b = true; //kiểu boolean
+        let s = 'Hà Nội' //kiểu string
+        document.write("i = " + i); //Cách để nối chuỗi
+        document.write("<br/>");
+        document.write('f = '+ f);
+        document.write("<br/>");
+        document.write("b = "+ b);
+        document.write("<br/>");
+        document.write("s = "+ s);
+
+        <!--Bài 2: In diện tích của hình chữ nhật-->
+        let width = 30;
+        let height = 10;
+        document.write("<br>")
+        let area = width + height;
+        document.write("Area = "+ area);
+
+        <!--Bài 3: sử dụng hàm prompt-->
+        function Check() {
+            var a;
+            a = prompt("nhap a", '');
+            var b;
+            b = prompt("nhap b", '');
+            var c = a % b;
+            if(c == 0){
+                alert(a + " là bộ số của "+ b);
+            }else {
+                area(a + "không phải là bội số của " + b);
+            }
+
+        }
+        document.write(Check());
+    </script>
+</body>
+</html>
+
