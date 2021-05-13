@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h3 onclick="Average()">Tinh diem trung binh ba mon ly, hoa, sinh va tong diem</h3>
+    <h3 onclick="Convert()">Chuyen doi do C sang do F</h3>
+    <h3 onclick="ChuViHinhTron()">Tinh chu vi hinh tron</h3>
+    <h3 onclick="DienTichHinhTron()">Tinh dien tich hinh tron</h3>
+    <script>
+        function Average() {
+            //khai bao bien
+            var biological;
+            var chemistry;
+            var physical;
+
+            //sử dụng hàm prompt để nhập dữ liệu vào
+            biological = prompt("Your biology score");
+            chemistry = prompt("Your chemistry score");
+            physical = prompt("Your physical score");
+
+            //Ép dữ liệu nhập vào sang kiểu number
+            var bio = parseFloat(biological);
+            var che = parseFloat(chemistry);
+            var phy = parseFloat(physical);
+
+            //tính tổng điểm vả tính trung bình
+            var sum = bio + che + phy;
+            var average = (bio + che + phy)/3;
+
+            //đua kết quả ra màng hình bằng hàm alert()
+            alert("The total score: " + sum);
+            alert("Average: " + average);
+        }
+
+        function Convert(){
+            var C;
+            C = prompt("Nhập vào độ C");
+            var c = parseFloat(C);
+            var Result = (c * 1.8) + 32;
+            alert("Do F: " + Result);
+        }
+
+        function DienTichHinhTron(){
+            var bk = prompt("nhập vào bán kính");
+            var BK = parseFloat(bk);
+            var S = Math.PI * BK * BK;
+            alert("Dien tich hinh tron: " + S);
+        }
+
+        function ChuViHinhTron(){
+            var bk = prompt("nhập vào bán kính");
+            var BK = parseFloat(bk);
+            var C = 2 * Math.PI * BK;
+            alert("Chu vi hinh tron" + C);
+        }
+    </script>
+</body>
+</html>
