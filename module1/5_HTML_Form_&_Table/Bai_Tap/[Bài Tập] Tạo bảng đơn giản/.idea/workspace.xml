@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2708f3bc-bc7e-4bfb-a3c2-8ab3c27129f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../[Bài tập]-TaoDanhSach/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../[Bài tập]-TaoDanhSach/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6_Tong_Quan_JavaScript/Thuc_Hanh/[Thực Hành] Nhúng JavaScript/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6_Tong_Quan_JavaScript/Thuc_Hanh/[Thực Hành] Nhúng JavaScript/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../7_Biến, Kiểu dữ liệu và toán tử/Bai_Tap/[Bài Tập] Ứng dụng chuyển đổi tiền tệ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../7_Biến, Kiểu dữ liệu và toán tử/Bai_Tap/[Bài Tập] Ứng dụng chuyển đổi tiền tệ/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../7_Biến, Kiểu dữ liệu và toán tử/Thuc_Hanh/[Thực Hành] Sử dụng toán tử/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../7_Biến, Kiểu dữ liệu và toán tử/Thuc_Hanh/[Thực Hành] Sử dụng toán tử/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +33,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../[Bài Tập] Tạo bảng nâng cao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../[Bài Tập] Tạo form lấy survey khách hàng" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -43,6 +46,7 @@
       <option name="presentableId" value="Default" />
       <updated>1620633392551</updated>
       <workItem from="1620633393819" duration="3164000" />
+      <workItem from="1621097018338" duration="50000" />
     </task>
     <servers />
   </component>
@@ -50,9 +54,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="172" y="171" key="FileChooserDialogImpl" timestamp="1620636581162">
+    <state x="172" y="171" key="FileChooserDialogImpl" timestamp="1621097065715">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="172" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1620636581162" />
+    <state x="172" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1621097065715" />
   </component>
 </project>

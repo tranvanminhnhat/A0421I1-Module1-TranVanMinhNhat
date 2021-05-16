@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7fa1d38-1656-436a-af54-00e49550022c" name="Default Changelist" comment="" />
+    <list default="true" id="e7fa1d38-1656-436a-af54-00e49550022c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo bảng đơn giản/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo bảng đơn giản/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../6_Tong_Quan_JavaScript/Thuc_Hanh/[Thực Hành] Nhúng JavaScript/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../6_Tong_Quan_JavaScript/Thuc_Hanh/[Thực Hành] Nhúng JavaScript/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../7_Biến, Kiểu dữ liệu và toán tử/Bai_Tap/[Bài Tập] Ứng dụng chuyển đổi tiền tệ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../7_Biến, Kiểu dữ liệu và toán tử/Bai_Tap/[Bài Tập] Ứng dụng chuyển đổi tiền tệ/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../7_Biến, Kiểu dữ liệu và toán tử/Thuc_Hanh/[Thực Hành] Sử dụng toán tử/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../7_Biến, Kiểu dữ liệu và toán tử/Thuc_Hanh/[Thực Hành] Sử dụng toán tử/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +34,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../[Bài Tập]-TaoTrangCVCaNhan" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo một form tìm kiếm Google" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="SvnConfiguration">
@@ -44,6 +49,7 @@
       <updated>1620376923449</updated>
       <workItem from="1620376924605" duration="1038000" />
       <workItem from="1620378495780" duration="75000" />
+      <workItem from="1621097316163" duration="26000" />
     </task>
     <servers />
   </component>
@@ -51,9 +57,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="179" y="171" key="FileChooserDialogImpl" timestamp="1620378568978">
+    <state x="179" y="171" key="FileChooserDialogImpl" timestamp="1621097340027">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="179" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1620378568978" />
+    <state x="179" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1621097340027" />
   </component>
 </project>

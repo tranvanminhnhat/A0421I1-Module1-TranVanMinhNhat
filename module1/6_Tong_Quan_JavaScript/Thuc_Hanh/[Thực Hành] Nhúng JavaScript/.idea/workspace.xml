@@ -29,7 +29,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../7_Biến, Kiểu dữ liệu và toán tử/Thuc_Hanh/[Thực Hành] Khai báo và sử dụng biến" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -42,6 +42,7 @@
       <option name="presentableId" value="Default" />
       <updated>1620749270009</updated>
       <workItem from="1620749272230" duration="467000" />
+      <workItem from="1620818045247" duration="24000" />
     </task>
     <servers />
   </component>
@@ -49,6 +50,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="173" y="171" key="FileChooserDialogImpl" timestamp="1620818066726">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="173" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1620818066726" />
     <state x="48" y="189" key="run.anything.popup" timestamp="1620749386635">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
