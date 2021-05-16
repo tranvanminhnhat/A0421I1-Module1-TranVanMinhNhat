@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .maytinh{
+            width: 500px;
+            height: 215px;
+            border: solid 1px blue;
+            margin: 30px auto;
+        }
+        .maytinh .maytinh--input{
+            margin-top: 27px;
+            margin-left: 28px;
+            width: 198px;
+            height: 37px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: solid 1px black;
+        }
+        .maytinh .maytinh--btn{
+            margin-left: 28px;
+            width: 87px;
+            height: 38px;
+            font-weight: bold;
+            font-size: 27px;
+            border: solid 1px black;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .maytinh .maytinh--ketqua{
+            margin-left: 28px;
+            width: 438px;
+            height: 37px;
+            border: solid 1px black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="maytinh">
+        <div>
+            <input id="so_A" placeholder="Nhap A" class="maytinh--input">
+            <input id="so_B" placeholder="nhap B" class="maytinh--input">
+        </div>
+        <div>
+            <button id="btn_cong" class="maytinh--btn" onclick="ketqua(this)">+</button>
+            <button id="btn_tru" class="maytinh--btn" onclick="ketqua(this)">-</button>
+            <button id="btn_nhan" class="maytinh--btn" onclick="ketqua(this)">*</button>
+            <button id="btn_chia" class="maytinh--btn" onclick="ketqua(this)">/</button>
+        </div>
+        <div>
+            <input id="ketqua" class="maytinh--ketqua">
+        </div>
+    </div>
+    <script>
+        function ketqua(obj) {
+            var A = parseFloat(document.getElementById("so_A").value);
+            var B = parseFloat(document.getElementById("so_B").value);
+            var type = obj.innerHTML;
+            if(type == '+'){
+                var ketqua = A + B;
+                document.getElementById('ketqua').value = ketqua;
+            }
+            if(type == '-'){
+                var ketqua = A - B;
+                document.getElementById('ketqua').value = ketqua;
+            }
+            if(type == '*'){
+                var ketqua = A * B;
+                document.getElementById('ketqua').value = ketqua;
+            }
+            if(type == '/'){
+                var ketqua = A / B;
+                document.getElementById('ketqua').value = ketqua;
+            }
+        }
+    </script>
+</body>
+</html>
