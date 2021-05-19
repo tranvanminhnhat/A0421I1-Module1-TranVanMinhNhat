@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chỉ số khối cơ thể</title>
+    <style>
+        *{
+            font-family: Lato;
+            font-size: 30px;
+        }
+        .BMI{
+            margin: 50px 50px;
+            width: 40%;
+            height: 40%;
+        }
+        .info{
+            margin: 40px 70px;
+        }
+        .BMI .BMI__table{
+            width: 90%;
+            height: 90%;
+            padding: 20px;
+        }
+
+        .BMI .BMI__table tr th,
+        .BMI .BMI__table tr td{
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: left;
+        }
+        .BMI .BMI__table tr th{
+            border-bottom: solid 2px black;
+        }
+        label{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form class="BMI">
+        <table class="BMI__table">
+            <tr class="BMI__table--title">
+                <th>BMI</th>
+                <th>Interpretation</th>
+            </tr>
+            <tr>
+                <td>BMI < 18.5</td>
+                <td>Underweight</td>
+            </tr>
+            <tr>
+                <td>18.5 &le; BMI &lt; 25.0</td>
+                <td>Normal</td>
+            </tr>
+            <tr>
+                <td>25.0 &le; BMI &lt; 30.0</td>
+                <td>Overweight</td>
+            </tr>
+            <tr>
+                <td>30 &le; BMI</td>
+                <td>Obese</td>
+            </tr>
+        </table>
+    </form>
+    <form class="info">
+        <div>
+            <label for="weight">Your Weight</label>
+            <input type="text" id="weight">
+        </div>
+        <div>
+            <label for="height">Your Height</label>
+            <input type="text" id="height">
+        </div>
+        <div>
+            <label for="BMI">BMI</label>
+            <input type="text" id="BMI" readonly>
+        </div>
+        <div>
+            <label for="interpretation">Interpretation</label>
+            <input type="text" id="interpretation" readonly>
+        </div>
+        <div>
+            <input type="button" value="Check" onclick="Check()">
+        </div>
+    </form>
+    <script>
+        function Check() {
+            var weight = parseFloat(document.getElementById('weight').value);
+            var height = parseFloat(document.getElementById('height').value);
+            var BMI = weight / (height * height);
+            document.getElementById('BMI').value = BMI;
+            var interpretation = document.getElementById('interpretation');
+            if(BMI < 18.5){
+                interpretation.value = 'Underweight';
+            }else if(BMI >= 18.5 && BMI <= 25.0){
+                interpretation.value = 'Normal';
+            }else if(BMI >= 25.0 && BMI <= 30.0){
+                interpretation.value = 'Overweight';
+            }else if(BMI >= 30.0){
+                interpretation.value = 'Obese';
+            }
+        }
+    </script>
+</body>
+</html>
