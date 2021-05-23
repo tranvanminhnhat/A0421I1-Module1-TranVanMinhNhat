@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p{
+            display: block;
+            width: 400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <p id="row1" onclick="puzzle1()"></p>
+            <p id="row2" onclick="puzzle2()"></p>
+            <p id="row3" onclick="puzzle3()"></p>
+        </div>
+    </form>
+    <script>
+        var row1 = new Array();
+        row1[0] = "<img src='img/nobita_1.png'/>";
+        row1[1] = "<img src='img/chaien_1.png'/>";
+        row1[2] = "<img src='img/suneo_1.png'/>";
+
+        var row2 = new Array();
+        row2[0] = "<img src='img/nobita_2.png'/>";
+        row2[1] = "<img src='img/chaien_2.png'/>";
+        row2[2] = "<img src='img/suneo_2.png'/>";
+
+        var row3 = new Array();
+        row3[0] = "<img src='img/nobita_3.png'/>";
+        row3[1] = "<img src='img/chaien_3.png'/>";
+        row3[2] = "<img src='img/suneo_3.png'/>";
+
+        document.getElementById('row1').innerHTML = row1[random(2)];
+        document.getElementById('row2').innerHTML = row2[random(2)];
+        document.getElementById('row3').innerHTML = row3[random(2)];
+
+        function puzzle1() {
+            document.getElementById('row1').innerHTML = row1[random(2)];
+        }
+
+        function puzzle2() {
+            document.getElementById('row2').innerHTML = row2[random(2)];
+        }
+
+        function puzzle3() {
+            document.getElementById('row3').innerHTML = row3[random(2)];
+        }
+
+        function random(range) {
+            var random = Math.floor(Math.random() * (range+1));
+            return random;
+        }
+    </script>
+</body>
+</html>
