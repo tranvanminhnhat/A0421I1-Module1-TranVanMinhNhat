@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <input type="button" value="check" onclick="check()">
+    <script>
+        function check() {
+            var a = parseInt(document.getElementById('a').value);
+            var b = parseInt(document.getElementById('b').value);
+            if(a%b == 0)
+            {
+                alert(a + " chia hết cho " + b);
+            }
+            else
+            {
+                alert(a + " không chia hết cho " + b);
+            }
+        }
+    </script>
+</body>
+</html>

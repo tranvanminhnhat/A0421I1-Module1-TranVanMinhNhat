@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <label>điểm kiểm tra miệng</label>
+    <input type="text" id="KTmieng">
+    <label>điểm kiểm tra 15 phút</label>
+    <input type="text" id="KT15phut">
+    <label>điểm kiểm tra 1 tiết</label>
+    <input type="text" id="KT1tiet">
+    <label>điểm kiểm tra cuối kì</label>
+    <input type="text" id="KTcuoiki">
+    <input type="button" value="check" onclick="check()">
+    <h3 id="ketqua"></h3>
+    <script>
+        function check() {
+            var KTmieng = parseFloat(document.getElementById('KTmieng').value);
+            var KT15phut = parseFloat(document.getElementById('KT15phut').value);
+            var KT1tiet = parseFloat(document.getElementById('KT1tiet').value);
+            var KTcuoiki = parseFloat(document.getElementById('KTcuoiki').value);
+            var tong = (KTmieng + KT15phut + (2*KT1tiet) + (3*KTcuoiki))/7;
+            document.getElementById('ketqua').innerHTML = "Tổng phẩy cuối năm của bạn: " + tong;
+            if(tong >= 8){
+                alert("bạn học sinh giỏi");
+            }else if(tong >=6.5){
+                alert("bạn học sinh tiên tiến");
+            }else if(tong >= 5){
+                alert('bạn học sinh trung bình');
+            }else if(tong >= 3.5){
+                alert("bạn học sinh yếu");
+            }else {
+                alert("bạn học sinh kém");
+            }
+        }
+    </script>
+</body>
+</html>
