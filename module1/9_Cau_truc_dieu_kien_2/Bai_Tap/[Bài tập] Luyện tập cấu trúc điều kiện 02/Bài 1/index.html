@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <label>Nhập độ C</label>
+    <input type="text" id="doC">
+    <input type="button" value="tính" onclick="Tinh()">
+    <script>
+        function Tinh() {
+            var C =parseFloat(document.getElementById('doC').value);
+            var F = C * 1.8 + 32;
+            alert(F);
+        }
+    </script>
+</body>
+</html>

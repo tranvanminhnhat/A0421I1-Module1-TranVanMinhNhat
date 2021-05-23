@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <label>Nhập vào a</label>
+    <input type="text" id="a">
+    <label>Nhập vào b</label>
+    <input type="text" id="b">
+    <label>Nhập vào c</label>
+    <input type="text" id="c">
+    <input type="button" value="tìm nghiệm" onclick="PTbac2()">
+    <script>
+        function PTbac2() {
+            var a = parseFloat(document.getElementById('a').value);
+            var b = parseFloat(document.getElementById('b').value);
+            var c = parseFloat(document.getElementById('c').value);
+            if(a == 0)
+            {
+                if(b == 0)
+                {
+                    if(c == 0){
+                        alert("phương trình vô số nghiệm");
+                    }
+                    else {
+                        alert("phương trình vô nghiệm");
+                    }
+                } else {
+                    alert("phương trình có một nghiệm x: " + (-c/b));
+                }
+            }else {
+                var delta = (b*b) - (4*a*c);
+                if(delta < 0){
+                    alert("phương trình vô nghiệm");
+                }else if(delta == 0){
+                    alert("phương trình có nghiệm kép x1 = x2 = " + (-b/(2*a)));
+                }else {
+                    var x1 = (-b + Math.sqrt(delta))/(2*a);
+                    var x2 = (-b - Math.sqrt(delta))/(2*a);
+                    document.write(x1);
+                    alert("phương trình có hai nghiệm x1 :" + x1 + " và x2: " + x2);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

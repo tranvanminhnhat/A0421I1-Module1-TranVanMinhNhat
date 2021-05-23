@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <label>Số tiền gởi</label>
+    <input type="text" id="tienbandau">
+    <label>số tháng gởi</label>
+    <input type="text" id="thanggoi">
+    <h3>lãi suất ngân hàng là 7%</h3>
+    <input type="button" value="Tính" onclick="tinhLaiSuat()">
+    <script>
+        function tinhLaiSuat() {
+            var tien = document.getElementById('tienbandau').value;
+            var thang = document.getElementById('thanggoi').value;
+            var tienlai = tien * ((7/100)/360) * (thang*30);
+            alert("lãi suất mà bạn nhận được từ ngân hàng là: " + tienlai);
+        }
+    </script>
+</body>
+</html>

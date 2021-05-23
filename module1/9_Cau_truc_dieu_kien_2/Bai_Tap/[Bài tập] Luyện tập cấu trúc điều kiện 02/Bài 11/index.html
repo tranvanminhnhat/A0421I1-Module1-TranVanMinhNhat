@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table tr th, table tr td{
+            border-collapse: collapse;
+            border: solid 1px black;
+            padding: 10px;
+            font-size: 20px;
+            font-family: Lato;
+            text-align: center;
+        }
+        label{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Bậc thuế</th>
+            <th>Phần thu nhập tính thuế/tháng (triệu đồng)</th>
+            <th>Thuế suất(%)</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>0 đến 5</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>5 đến 10</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>10 đến 18</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>18 đến 32</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>32 đến 52</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>52 đến 80</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Trên 80</td>
+            <td>35</td>
+        </tr>
+    </table>
+    <label>Số tiền lương hằng tháng của bạn</label>
+    <input type="text" id="tienluong">
+    <label>Số người phụ thuộc</label>
+    <input type="text" id="phuthuoc">
+    <input type="button" value="Tinh" onclick="TNCN()">
+    <script>
+        function TNCN() {
+            var tienluong = parseFloat(document.getElementById('tienluong').value);
+            var phuthuoc = parseFloat(document.getElementById('phuthuoc').value) * 3600000;
+            var range = tienluong - (9000000+phuthuoc);
+            if(range <= 0){
+                alert("thuế thu nhập cá nhân của bạn là 0 đồng");
+            }else if(range > 0 && range <= 5000000){
+                alert("thuế thu nhập cá nhân của bạn là: " + range*5/100 + " đồng");
+            }else if(range >5000000 && range <= 10000000){
+                alert("thuế thu nhập cá nhân của bạn là: " + range*10/100 + " đồng");
+            }else if(range > 10000000 && range <= 18000000){
+                alert("thuế thu nhập cá nhân của bạn là: " + range*15/100 + " đồng");
+            }else if(range > 18000000 && range <= 32000000){
+                alert("thuế thu nhập cá nhân của bạn là: " + range*20/100 + " đồng");
+            }else if(range > 32000000 && range <= 52000000){
+                alert("thuế thu nhập cá nhân của bạn là: " + range*25/100 + " đồng");
+            }else if(range > 52000000 && range <= 80000000){
+                alert("thuế thu nhập cá nhân của bạn là: " + range*30/100 + " đồng");
+            }else{
+                alert("'thế thu nhập cá nhân của bạn là: " + range*35/100 + " đồng");
+            }
+        }
+    </script>
+</body>
+</html>

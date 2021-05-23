@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <label>Nhập số mét</label>
+    <input type="text" id="met">
+    <input type="button" value="tính" onclick="Tinh()">
+    <script>
+        function Tinh() {
+            var met =parseFloat(document.getElementById('met').value);
+            var ft = met * 3.2808;
+            alert(ft);
+        }
+    </script>
+</body>
+</html>

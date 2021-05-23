@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <label>Nhập cạnh a</label>
+    <input type="text" id="a">
+    <label>Nhập cạnh b</label>
+    <input type="text" id="b">
+    <input type="button" value="tính" onclick="Tinh()">
+    <script>
+        function Tinh() {
+            var a =parseFloat(document.getElementById('a').value);
+            var b =parseFloat(document.getElementById('b').value);
+            var S = a * b;
+            alert(S);
+        }
+    </script>
+</body>
+</html>
