@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e88279e6-3013-4cd7-b9b3-b8d489f41a6b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../3_Mo_Ta_Thuat_Toan_Bang_Pseudo_code_And_Flowchart/Bai_Tap/01[Bai_Tap]-PseudoCode_Flowchart_TinhDiemTrungBinh.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3_Mo_Ta_Thuat_Toan_Bang_Pseudo_code_And_Flowchart/Bai_Tap/02[Bai_Tap]-PseudoCode_Flowchart_ChuyenDoiTienTe.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3_Mo_Ta_Thuat_Toan_Bang_Pseudo_code_And_Flowchart/Bai_Tap/03[Bai_Tap]-PseudoCode_Flowchart_SoLonNhat.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3_Mo_Ta_Thuat_Toan_Bang_Pseudo_code_And_Flowchart/Bai_Tap/04[Bai_Tap]-PseudoCode_Flowchart_SoLonNhatTrongDaySo.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3_Mo_Ta_Thuat_Toan_Bang_Pseudo_code_And_Flowchart/Bai_Tap/05[Bai_Tap]-PseudoCode_Flowchart_ThuatToanCauTrucDieuKien.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3_Mo_Ta_Thuat_Toan_Bang_Pseudo_code_And_Flowchart/Thuc_Hanh/[Thuc_Hanh]-PseudoCode_DoiNhietDo.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../3_Mo_Ta_Thuat_Toan_Bang_Pseudo_code_And_Flowchart/Thuc_Hanh/[Thuc_Hanh]-PseudoCode_GameDoanSo.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/GitProject/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/GitProject/demo/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/GitProject/demo/news.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/GitProject/tusachvang" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/[Bai_Tap]-SuDungGIT.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/[Bài Tập] Tạo bảng nâng cao/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/[Bài Tập] Tạo bảng nâng cao/.idea/[Bài Tập] Tạo bảng nâng cao.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/[Bài Tập] Tạo bảng nâng cao/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/[Bài Tập] Tạo bảng nâng cao/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/[Bài Tập] Tạo bảng nâng cao/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/[Bài Tập]-TaoTrangCVCaNhan/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/[Bài Tập]-TaoTrangCVCaNhan/.idea/[Bài Tập]-TaoTrangCVCaNhan.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/[Bài Tập]-TaoTrangCVCaNhan/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/[Bài Tập]-TaoTrangCVCaNhan/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/[Bài Tập]-TaoTrangCVCaNhan/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/[Bài Tập]-TaoTrangCVCaNhan/css.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/[Bài Tập]-TaoTrangCVCaNhan/img/profile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/[Bài Tập]-TaoTrangCVCaNhan/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/[Bài tập]-TaoDanhSach/.idea/[Bài tập]-TaoDanhSach.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/[Bài tập]-TaoDanhSach/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/[Bài tập]-TaoDanhSach/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/[Bài tập]-TaoDanhSach/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/[Bài tập]-TaoDanhSach/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/[Bài tập]-TaoDanhSach/[Bài tập]-TaoDanhSach.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/[Bài tập]-TaoDanhSach/css.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Bai_Tap/[Bài tập]-TaoDanhSach/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Thuc_Hanh/[A0421I1]_Create_A_New_Project/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Thuc_Hanh/[Thuc_Hanh]-Clone_Du_An_Tu_GIT.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Thuc_Hanh/[Thuc_Hanh]-Tao_Du_An_Moi_Tren_GITHUb.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Thuc_Hanh/[Thực Hành] Sử dụng thẻ HTML cơ bản/.idea/WebStormProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Thuc_Hanh/[Thực Hành] Sử dụng thẻ HTML cơ bản/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Thuc_Hanh/[Thực Hành] Sử dụng thẻ HTML cơ bản/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Thuc_Hanh/[Thực Hành] Sử dụng thẻ HTML cơ bản/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Thuc_Hanh/[Thực Hành] Sử dụng thẻ HTML cơ bản/CSS.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../4_Git_HTML/Thuc_Hanh/[Thực Hành] Sử dụng thẻ HTML cơ bản/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo bảng nâng cao/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo bảng nâng cao/.idea/[Bài Tập] Tạo bảng nâng cao.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo bảng nâng cao/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo bảng nâng cao/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo bảng nâng cao/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo bảng nâng cao/calendar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo bảng nâng cao/chessboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo bảng đơn giản/.idea/[Bài Tập] Tạo bảng đơn giản.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo bảng đơn giản/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo bảng đơn giản/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo bảng đơn giản/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo bảng đơn giản/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo bảng đơn giản/SimpleShedule.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo form lấy survey khách hàng/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo form lấy survey khách hàng/.idea/[Bài Tập] Tạo form lấy survey khách hàng.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo form lấy survey khách hàng/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo form lấy survey khách hàng/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo form lấy survey khách hàng/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo form lấy survey khách hàng/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo form đơn giản/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo form đơn giản/.idea/[Bài Tập] Tạo form đơn giản.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo form đơn giản/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo form đơn giản/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo form đơn giản/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo form đơn giản/Register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo form đơn giản/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo giao diện form đăng ký người dùng/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo giao diện form đăng ký người dùng/.idea/[Bài Tập] Tạo giao diện form đăng ký người dùng.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo giao diện form đăng ký người dùng/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo giao diện form đăng ký người dùng/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo giao diện form đăng ký người dùng/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Bai_Tap/[Bài Tập] Tạo giao diện form đăng ký người dùng/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo bảng cơ bản/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo bảng cơ bản/.idea/[Thực Hành] Tạo bảng cơ bản.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo bảng cơ bản/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo bảng cơ bản/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo bảng cơ bản/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo bảng cơ bản/table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo bảng nâng cao/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo bảng nâng cao/.idea/[Thực Hành] Tạo bảng nâng cao.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo bảng nâng cao/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo bảng nâng cao/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo bảng nâng cao/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo bảng nâng cao/Schedule.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo form cơ bản/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo form cơ bản/.idea/[Thực Hành] Tạo form cơ bản.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo form cơ bản/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo form cơ bản/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo form cơ bản/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo form cơ bản/simpleform.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo một form tìm kiếm Google/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo một form tìm kiếm Google/.idea/[Thực Hành] Tạo một form tìm kiếm Google.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo một form tìm kiếm Google/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo một form tìm kiếm Google/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo một form tìm kiếm Google/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../5_HTML_Form_&amp;_Table/Thuc_Hanh/[Thực Hành] Tạo một form tìm kiếm Google/Search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../6_Tong_Quan_JavaScript/Thuc_Hanh/[Thực Hành] Hiển thị đầu ra/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../6_Tong_Quan_JavaScript/Thuc_Hanh/[Thực Hành] Hiển thị đầu ra/.idea/[Thực Hành] Hiển thị đầu ra.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../6_Tong_Quan_JavaScript/Thuc_Hanh/[Thực Hành] Hiển thị đầu ra/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../6_Tong_Quan_JavaScript/Thuc_Hanh/[Thực Hành] Hiển thị đầu ra/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../6_Tong_Quan_JavaScript/Thuc_Hanh/[Thực Hành] Hiển thị đầu ra/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../6_Tong_Quan_JavaScript/Thuc_Hanh/[Thực Hành] Hiển thị đầu ra/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../6_Tong_Quan_JavaScript/Thuc_Hanh/[Thực Hành] Hiển thị đầu ra/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../6_Tong_Quan_JavaScript/Thuc_Hanh/[Thực Hành] Nhúng JavaScript/.idea/[Thực Hành] Nhúng JavaScript.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../6_Tong_Quan_JavaScript/Thuc_Hanh/[Thực Hành] Nhúng JavaScript/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../6_Tong_Quan_JavaScript/Thuc_Hanh/[Thực Hành] Nhúng JavaScript/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../6_Tong_Quan_JavaScript/Thuc_Hanh/[Thực Hành] Nhúng JavaScript/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../6_Tong_Quan_JavaScript/Thuc_Hanh/[Thực Hành] Nhúng JavaScript/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../6_Tong_Quan_JavaScript/Thuc_Hanh/[Thực Hành] Nhúng JavaScript/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../6_Tong_Quan_JavaScript/Thuc_Hanh/[Thực Hành] Nhúng JavaScript/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Bai_Tap/[Bài Tập] Biến, Kiểu dữ liệu và toán tử/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Bai_Tap/[Bài Tập] Biến, Kiểu dữ liệu và toán tử/.idea/[Bài Tập] Biến, Kiểu dữ liệu và toán tử.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Bai_Tap/[Bài Tập] Biến, Kiểu dữ liệu và toán tử/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Bai_Tap/[Bài Tập] Biến, Kiểu dữ liệu và toán tử/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Bai_Tap/[Bài Tập] Biến, Kiểu dữ liệu và toán tử/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Bai_Tap/[Bài Tập] Biến, Kiểu dữ liệu và toán tử/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Bai_Tap/[Bài Tập] Máy tính cơ bản/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Bai_Tap/[Bài Tập] Máy tính cơ bản/.idea/[Bài Tập] Máy tính cơ bản.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Bai_Tap/[Bài Tập] Máy tính cơ bản/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Bai_Tap/[Bài Tập] Máy tính cơ bản/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Bai_Tap/[Bài Tập] Máy tính cơ bản/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Bai_Tap/[Bài Tập] Máy tính cơ bản/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Bai_Tap/[Bài Tập] Ứng dụng chuyển đổi tiền tệ/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Bai_Tap/[Bài Tập] Ứng dụng chuyển đổi tiền tệ/.idea/[Bài Tập] Ứng dụng chuyển đổi tiền tệ.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Bai_Tap/[Bài Tập] Ứng dụng chuyển đổi tiền tệ/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Bai_Tap/[Bài Tập] Ứng dụng chuyển đổi tiền tệ/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Bai_Tap/[Bài Tập] Ứng dụng chuyển đổi tiền tệ/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Bai_Tap/[Bài Tập] Ứng dụng chuyển đổi tiền tệ/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Bai_Tap/[Bài Tập] Ứng dụng máy tính nâng cao/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Bai_Tap/[Bài Tập] Ứng dụng máy tính nâng cao/.idea/[Bài Tập] Ứng dụng máy tính.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Bai_Tap/[Bài Tập] Ứng dụng máy tính nâng cao/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Bai_Tap/[Bài Tập] Ứng dụng máy tính nâng cao/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Bai_Tap/[Bài Tập] Ứng dụng máy tính nâng cao/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Bai_Tap/[Bài Tập] Ứng dụng máy tính nâng cao/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Thuc_Hanh/[Thực Hành] Khai báo và sử dụng biến/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Thuc_Hanh/[Thực Hành] Khai báo và sử dụng biến/.idea/[Thực Hành] Khai báo và sử dụng biến.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Thuc_Hanh/[Thực Hành] Khai báo và sử dụng biến/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Thuc_Hanh/[Thực Hành] Khai báo và sử dụng biến/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Thuc_Hanh/[Thực Hành] Khai báo và sử dụng biến/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Thuc_Hanh/[Thực Hành] Khai báo và sử dụng biến/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Thuc_Hanh/[Thực Hành] Sử dụng toán tử/.idea/[Thực Hành] Sử dụng toán tử.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Thuc_Hanh/[Thực Hành] Sử dụng toán tử/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Thuc_Hanh/[Thực Hành] Sử dụng toán tử/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Thuc_Hanh/[Thực Hành] Sử dụng toán tử/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Thuc_Hanh/[Thực Hành] Sử dụng toán tử/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Thuc_Hanh/[Thực Hành] Sử dụng toán tử/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7_Bien_Kieu_du_ lieu_va_toan_tu/Thuc_Hanh/[Thực Hành] Sử dụng toán tử/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Kiểm tra năm nhuận/.idea/[Thực hành] Kiểm tra năm nhuận.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Kiểm tra năm nhuận/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Kiểm tra năm nhuận/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Kiểm tra năm nhuận/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Kiểm tra năm nhuận/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Kiểm tra năm nhuận/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Luyện tập với cấu trúc if-else-if/.idea/[Thực hành] Luyện tập với cấu trúc if-else-if.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Luyện tập với cấu trúc if-else-if/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Luyện tập với cấu trúc if-else-if/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Luyện tập với cấu trúc if-else-if/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Luyện tập với cấu trúc if-else-if/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Luyện tập với cấu trúc if-else-if/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Luyện tập với cấu trúc if-else/.idea/[Thực hành] Luyện tập với cấu trúc if-else.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Luyện tập với cấu trúc if-else/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Luyện tập với cấu trúc if-else/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Luyện tập với cấu trúc if-else/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Luyện tập với cấu trúc if-else/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Luyện tập với cấu trúc if-else/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Luyện tập với cấu trúc switch case/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Luyện tập với cấu trúc switch case/.idea/[Thực hành] Luyện tập với cấu trúc switch case.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Luyện tập với cấu trúc switch case/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Luyện tập với cấu trúc switch case/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Luyện tập với cấu trúc switch case/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Luyện tập với cấu trúc switch case/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Luyện tập với toán tử ba ngôi/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Luyện tập với toán tử ba ngôi/.idea/[Thực hành] Luyện tập với toán tử ba ngôi.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Luyện tập với toán tử ba ngôi/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Luyện tập với toán tử ba ngôi/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Luyện tập với toán tử ba ngôi/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../8_Cau_truc_đieu_kien_1/Thuc_Hanh/[Thực hành] Luyện tập với toán tử ba ngôi/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Câu lệnh switch-case/.idea/[Bài tập] Câu lệnh switch-case.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Câu lệnh switch-case/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Câu lệnh switch-case/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Câu lệnh switch-case/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Câu lệnh switch-case/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Câu lệnh switch-case/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Game puzzle/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Game puzzle/.idea/[Bài tập] Game puzzle.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Game puzzle/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Game puzzle/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Game puzzle/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Game puzzle/img/chaien_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Game puzzle/img/chaien_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Game puzzle/img/chaien_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Game puzzle/img/nobita_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Game puzzle/img/nobita_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Game puzzle/img/nobita_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Game puzzle/img/suneo_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Game puzzle/img/suneo_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Game puzzle/img/suneo_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Game puzzle/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 1/.idea/[Bài tập] Luyện tập cấu trúc điều kiện 01.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 2/.idea/bài 2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 2/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 3/.idea/bài 3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 3/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 4/.idea/bài 4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 4/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 4/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 4/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 5/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 5/.idea/bài 5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 5/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 5/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 5/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 5/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 6/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 6/.idea/bài 6.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 6/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 6/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 6/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 6/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 7/.idea/bài 7.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 7/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 7/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 7/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 7/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 01/bài 7/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 02/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 02/.idea/[Bài tập] Luyện tập cấu trúc điều kiện 02.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 02/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 02/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 02/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 02/Bài 1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 02/Bài 10/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 02/Bài 11/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 02/Bài 12/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 02/Bài 2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 02/Bài 3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 02/Bài 4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 02/Bài 5/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 02/Bài 6/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 02/Bài 7/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 02/Bài 8/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Luyện tập cấu trúc điều kiện 02/Bài 9/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Máy tính đơn giản/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Máy tính đơn giản/.idea/[Bài tập] Máy tính đơn giản.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Máy tính đơn giản/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Máy tính đơn giản/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Máy tính đơn giản/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Máy tính đơn giản/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Tính chỉ số cân nặng của cơ thể/.idea/[Bài tập] Tính chỉ số cân nặng của cơ thể.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Tính chỉ số cân nặng của cơ thể/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Tính chỉ số cân nặng của cơ thể/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Tính chỉ số cân nặng của cơ thể/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Tính chỉ số cân nặng của cơ thể/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Tính chỉ số cân nặng của cơ thể/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Ứng dụng vui DoYouLoveMe/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Ứng dụng vui DoYouLoveMe/.idea/[Bài tập] Ứng dụng vui DoYouLoveMe.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Ứng dụng vui DoYouLoveMe/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Ứng dụng vui DoYouLoveMe/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Ứng dụng vui DoYouLoveMe/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Bai_Tap/[Bài tập] Ứng dụng vui DoYouLoveMe/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Thuc_Hanh/[Thực hành] Sự kiện bàn phím/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Thuc_Hanh/[Thực hành] Sự kiện bàn phím/.idea/[Thực hành] Sự kiện bàn phím.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Thuc_Hanh/[Thực hành] Sự kiện bàn phím/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Thuc_Hanh/[Thực hành] Sự kiện bàn phím/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Thuc_Hanh/[Thực hành] Sự kiện bàn phím/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Thuc_Hanh/[Thực hành] Sự kiện bàn phím/img/nobita.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Thuc_Hanh/[Thực hành] Sự kiện bàn phím/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Thuc_Hanh/[Thực hành] Sự kiện chuột/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Thuc_Hanh/[Thực hành] Sự kiện chuột/.idea/[Thực hành] Sự kiện chuột.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Thuc_Hanh/[Thực hành] Sự kiện chuột/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Thuc_Hanh/[Thực hành] Sự kiện chuột/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Thuc_Hanh/[Thực hành] Sự kiện chuột/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Thuc_Hanh/[Thực hành] Sự kiện chuột/img/ball.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../9_Cau_truc_dieu_kien_2/Thuc_Hanh/[Thực hành] Sự kiện chuột/index.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectId" id="1syXGGos9l1HvLAprOUNk82iFjh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Bài 2" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e88279e6-3013-4cd7-b9b3-b8d489f41a6b" name="Default Changelist" comment="" />
+      <created>1621845705745</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621845705745</updated>
+      <workItem from="1621845706937" duration="325000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="172" y="171" key="FileChooserDialogImpl" timestamp="1621846032088">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="172" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1621846032088" />
+  </component>
+</project>
