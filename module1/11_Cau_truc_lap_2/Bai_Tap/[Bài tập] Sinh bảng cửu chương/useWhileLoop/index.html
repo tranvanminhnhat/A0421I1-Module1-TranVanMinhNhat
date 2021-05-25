@@ -7,15 +7,18 @@
 <body>
     <script>
         let sout, i, j;
-        sout = "<table border='1' width='1000' cellpadding='10' cellspacing='4px'>"
+        sout = "<table border='1' width='1000' cellpadding='10' cellspacing='4'>"
         i = 1;
         j = 2;
         while (i <= 10){
             sout = sout + "<tr>";
             while (j <= 10){
-                sout = sout + "<td>" + j + " x " + i + " = " + j*i + "</td>"
+                sout = sout + "<td>" + j + " x " + i + " = " + j*i + "</td>";
+                j++;
             }
-            sout = sout + "</td>"
+            sout = sout + "</td>";
+            j=2;
+            i++;
         }
         sout = sout + "</table>";
         document.write(sout);
