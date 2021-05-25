@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let f1 = 1;
+        let f2 = 1;
+        let f3;
+        let str_fibo = '';
+        let count = 0;
+        while (count < 18){
+            f3 = f1 + f2;
+            f1 = f2;
+            f2 = f3;
+            str_fibo += f3 + ' ';
+            count++;
+        }
+        document.write('1 ' + '1 ' + str_fibo)
+    </script>
+</body>
+</html>

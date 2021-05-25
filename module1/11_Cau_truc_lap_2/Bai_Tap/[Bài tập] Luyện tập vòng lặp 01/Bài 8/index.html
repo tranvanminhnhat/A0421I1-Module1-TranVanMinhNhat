@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Number guessing game</h1>
+    <input type="text" id="startNumber" placeholder="start number">
+    <input type="text" id="endNumber" placeholder="end number">
+    <h3>You can only guess 3 times !!!</h3>
+    <input type="button" value="Play" onclick="RandomGame()">
+    <script>
+        function RandomGame() {
+            var startNumber = parseFloat(document.getElementById('startNumber').value);
+            var endNumber = parseFloat(document.getElementById('endNumber').value);
+            var i = 1;
+            var count = 0;
+            for(i; i<=3; i++){
+                var guessNumber = parseFloat(prompt("Please enter your number"));
+                if(guessNumber == random(startNumber, endNumber)){
+                    alert("You win ^-^");
+                    break;
+                }
+                count += 1;
+            }
+            if(count == 3){
+                alert("You lose !!!");
+            }
+
+        }
+        function random(startNumber, endNumber) {
+            return Math.floor(Math.random()*(endNumber - startNumber +1)) + startNumber;
+        }
+    </script>
+</body>
+</html>
