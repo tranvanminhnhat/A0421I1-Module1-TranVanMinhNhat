@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let sout, i, j;
+        sout = "<table border='1' width='1000' cellpadding='10' cellspacing='4px'>"
+        i = 1;
+        j = 2;
+        while (i <= 10){
+            sout = sout + "<tr>";
+            while (j <= 10){
+                sout = sout + "<td>" + j + " x " + i + " = " + j*i + "</td>"
+            }
+            sout = sout + "</td>"
+        }
+        sout = sout + "</table>";
+        document.write(sout);
+    </script>
+</body>
+</html>
