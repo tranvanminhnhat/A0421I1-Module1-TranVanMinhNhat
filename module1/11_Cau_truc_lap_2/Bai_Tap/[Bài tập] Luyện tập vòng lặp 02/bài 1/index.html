@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var n = parseInt(prompt("Enter n"));
+        var count = 0;
+        var f3;
+        var f1= 0;
+        var f2 = 1;
+        var str_fibo = '';
+        while (count < n - 1){
+            f3 = f1 + f2;
+            f1 = f2;
+            f2 = f3;
+            str_fibo += f3 + ' ';
+            count++;
+        }
+        document.write('1 ' + str_fibo);
+    </script>
+</body>
+</html>
