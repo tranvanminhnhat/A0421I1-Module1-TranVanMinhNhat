@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let n =  EnterNumber();
+        alert(DisplayResult(n))
+        function EnterNumber() {
+            do{
+                var number = parseFloat(prompt('enter the number of prime that you want to display on browser'));
+            }while (number < 2);
+            return number;
+        }
+        
+        function DisplayResult(n) {
+            let str_display_result = '';
+            let count = 0;
+            let i = 2;
+            while (count < n){
+                if(CheckPrimeNumber(i)){
+                    count++;
+                    str_display_result += i + ' ';
+                }
+                i++;
+            }
+            return str_display_result;
+        }
+
+        function CheckPrimeNumber(n) {
+            for (var i = 2; i <= Math.sqrt(n); i++){
+                if(n % i == 0){
+                    return false;
+                }
+            }
+            return true;
+        }
+
+    </script>
+</body>
+</html>
