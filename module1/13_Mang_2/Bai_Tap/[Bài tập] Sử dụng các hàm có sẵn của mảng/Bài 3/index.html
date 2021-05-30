@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var str = prompt("Enter a string");
+        var lower = 'quertyuioplkjhgfdsazxcvbnm';
+        var upper = 'QUERTYUIOPLKJHGFDSAZXCVBNM';
+        var result = [];
+        for(var i = 0; i<= str.length; i++){
+            if(lower.indexOf(str[i]) !== -1){
+                result.push(str[i].toUpperCase());
+            }else if(upper.indexOf(str[i]) !== -1){
+                result.push(str[i].toLowerCase());
+            }else {
+                result.push(str[i]);
+            }
+        }
+        console.log(result.join(''));
+    </script>
+</body>
+</html>

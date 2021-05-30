@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var number = prompt("enter a number");
+        var arrayNumber = [];
+        var index = 0;
+
+        //Tách chuỗi số ra thành các ký tự riêng lẻ và thêm chúng vào mảng theo chỉ số index
+        for(var i of number){
+            arrayNumber[index] = i;
+            index++;
+        }
+
+
+        for (var j = 0; j<arrayNumber.length; j++){
+
+            //Nếu dãy số có hai số chẵn liên tiếp thì ta chèn phần tử "-" vào mảng
+            if(arrayNumber[j] % 2 == 0 && arrayNumber[j+1] % 2 == 0){
+                for(var h = arrayNumber.length; h > j + 1; h--){
+                    arrayNumber[h] = arrayNumber[h - 1];
+                }
+                arrayNumber[j + 1] = '-';
+            }
+        }
+
+        console.log(arrayNumber.join(''));
+
+    </script>
+</body>
+</html>
