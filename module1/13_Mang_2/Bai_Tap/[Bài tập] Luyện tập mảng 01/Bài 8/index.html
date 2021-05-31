@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var arr = [];
+        do{
+            var n = parseInt(prompt("Nhập sô lượng phần tử trong mảng"));
+        }while (n <= 0 || isNaN(n));
+        for (let i = 0; i<n; i++){
+            do {
+                arr[i] = parseFloat(prompt("Nhập giá trị ở vị trí thứ "+i));
+            }while (isNaN(arr[i]));
+        }
+        for (let i = 0;i<n;i++){
+            for (let j = n-1; j>=i;j--){
+                if(arr[j]>arr[j-1]){
+                    var temp = arr[j];
+                    arr[j] = arr[j-1];
+                    arr[j-1] = temp;
+                }
+            }
+        }
+        document.write(arr);
+    </script>
+</body>
+</html>
