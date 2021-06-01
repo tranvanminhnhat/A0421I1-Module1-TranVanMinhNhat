@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h2{
+            text-align: center;
+            font-size: 40px;
+        }
+        textarea{
+            margin-left: 35%;
+            width: 30%;
+            height: 300px;
+            font-size: 30px;
+            font-family: Lato;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 40px;
+        }
+    </style>
+</head>
+<body onkeydown="Display()">
+    <h2>Type anyting slowly</h2>
+    <textarea id="text"></textarea>
+<!--    <input type="button" value="press" onclick="Display()">-->
+    <script>
+        var i = 0;
+        function Display() {
+            var display_arr = ['I',' ','a','m',' ','s','o',' ', 'b','r','i','l','l','i','a','n','t',' ','!','!','!'];
+            document.getElementById('text').innerHTML = document.getElementById('text').innerHTML + display_arr[i];
+            i++;
+            if(i == display_arr.length+1){
+                document.getElementById('text').innerHTML = '';
+                i = 0;
+            }
+        }
+    </script>
+</body>
+</html>
