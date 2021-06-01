@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let arr = [];
+        do{
+            var n = parseInt(prompt("Enter the number of element in array"));
+        }while (n<=0 || isNaN(n));
+        for (let i = 0; i<n; i++){
+            arr[i] = prompt("Enter the value of the "+i+" position of array");
+        }
+
+        //Thuật toán đảo ngược mảng
+        for (let i = 0; i<n/2; i++){
+            let temp = arr[i];
+            arr[i] = arr[n-1-i];
+            arr[n-1-i] = temp;
+        }
+        console.log(arr)
+    </script>
+</body>
+</html>

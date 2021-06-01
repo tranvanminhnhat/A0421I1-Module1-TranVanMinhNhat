@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let str_1 = prompt("Enter the first string");
+        let str_2 = prompt("Enter the second string");
+        let count = 0;
+        let i = 0;
+        if(str_1.length != str_2.length){
+            alert('The first string and the second string are not the same');
+        }else {
+            while (i < str_1.length){
+                if(str_1[i] != str_2[i]){
+                    count += 1;
+                    break;
+                }
+                i++;
+            }
+        }
+        if(count == 1){
+            alert('The first string and the second string are not the same');
+        }else {
+            alert('The first string and the second string are the same');
+        }
+    </script>
+</body>
+</html>
