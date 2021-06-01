@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <select id="mySelect">
+        <option value="ftm">foot to meter</option>
+        <option value="mtf">meter to foot</option>
+    </select>
+    <input type="button" value="Calculate" onclick="convert()">
+    <input type="text" id="result">;
+    <script>
+        function footToMeter(foot) {
+            return 0.305 * foot;
+        }
+        function meterToFoot(meter) {
+            return 3.279 * meter;
+        }
+        function convert() {
+            var mySelect = document.getElementById('mySelect').value;
+            var input = document.getElementById('input').value;
+            if(mySelect == 'ftm'){
+                document.getElementById('result').value = footToMeter(parseFloat(input));
+            }else if(mySelect == 'mtf'){
+                document.getElementById('result').value = meterToFoot(parseFloat(input));
+            }
+        }
+    </script>
+</body>
+</html>
