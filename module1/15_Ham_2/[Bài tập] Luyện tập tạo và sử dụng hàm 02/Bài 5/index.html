@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function max(a,b,c) {
+            return  a>b?(a>c?a:c):(b>c?b:c);
+        }
+        let a = parseFloat(prompt("number a"));
+        let b = parseFloat(prompt("number b"));
+        let c = parseFloat(prompt("number c"));
+        alert("The largest of the three numbers is "+max(a,b,c));
+    </script>
+</body>
+</html>

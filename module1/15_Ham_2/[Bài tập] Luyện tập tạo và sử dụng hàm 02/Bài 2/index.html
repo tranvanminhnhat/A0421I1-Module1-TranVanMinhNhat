@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function areaOfCircle(rad) {
+            return Math.PI * (rad*rad);
+        }
+        function circumferenceOfCircle(rad) {
+            return 2*rad*Math.PI;
+        }
+        let rad = parseFloat(prompt("enter radius"))
+
+        alert("Area of the circle: " + areaOfCircle(rad));
+        alert("circumference of circle: " + circumferenceOfCircle(rad));
+    </script>
+</body>
+</html>
