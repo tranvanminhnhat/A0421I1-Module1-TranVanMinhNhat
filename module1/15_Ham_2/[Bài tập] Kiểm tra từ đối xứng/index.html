@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let str = prompt("enter a string");
+        function isPalindrome(str) {
+            var len = str.length;
+            var mid = Math.floor(len/2);
+            for ( var i = 0; i < mid; i++ ) {
+                if (str[i] !== str[len - 1 - i]) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        if(isPalindrome(str)){
+            alert(str + ' is Palindrome');
+        }else {
+            alert(str + ' is not Palindrome');
+        }
+    </script>
+</body>
+</html>
