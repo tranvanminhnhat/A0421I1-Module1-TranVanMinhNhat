@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        //Xây dựng một lớp MyDate với ba tham số truyền vào
+        let MyDate = function (day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+            this.getDay = function () {
+                return this.day;
+            }
+            this.getMonth = function () {
+                return this.month;
+            }
+            this.getYear = function () {
+                return this.year;
+            }
+            this.setDay = function(day) {
+                this.day  = day;
+                return this.day;
+            }
+            this.setMonth = function(month) {
+                this.month  = month;
+                return this.month;
+            }
+            this.setYear = function(year) {
+                this.year  = year;
+                return this.year;
+            }
+        }
+
+        let date = new MyDate(2,3,2007);
+        let day = date.getDay();
+
+        let month = date.getMonth();
+
+        let year = date.getYear();
+
+        alert(day + "/" + month + "/" + year);
+
+        let newDay = date.setDay(10);
+        let newMonth = date.setMonth(10);
+        let newYear = date.setYear(2019);
+
+        alert(newDay + "/" + newMonth + "/" + newYear);
+    </script>
+</body>
+</html>
