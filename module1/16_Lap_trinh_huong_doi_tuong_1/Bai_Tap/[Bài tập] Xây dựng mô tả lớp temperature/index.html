@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function Temperature(C) {
+            this.C = C;
+
+            this.cToF = function () {
+                return (1.8*this.C + 32);
+            };
+
+            this.cToK = function () {
+                return this.C + 273.15;
+            };
+
+            this.display = function () {
+                if(this.C >= -273){
+                    document.write("C to F: " + this.cToF() +" ");
+                    document.write("C to K: " + this.cToK());
+                }else {
+                    document.write("the temperature must be larger than -273 degrees");
+                }
+            }
+        }
+
+        var C = new Temperature(25);
+        C.C = -299;
+        C.display();
+    </script>
+</body>
+</html>
