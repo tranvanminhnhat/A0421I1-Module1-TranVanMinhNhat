@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="button" value="nokia power" onclick="NokiaPower()">
+    <input type="button" value="nokia charge" onclick="nokiaCharge()">
+    <input type="button" value="nokia create message" onclick="nokiaCreateMessage()">
+    <input type="button" value="nokia get message" onclick="nokiaGetText()">
+    <input type="button" value="nokia see outbox" onclick="nokiaSeeOutbox()">
+    <input type="button" value="nokia see inbox" onclick="nokiaSeeInbox()">
+    <br><br><br><br>
+    <input type="button" value="iPhone power" onclick="IPhonePower()">
+    <input type="button" value="iPhone charge" onclick="iPhoneCharge()">
+    <input type="button" value="iPhone create message" onclick="iPhoneCreateMessage()">
+    <input type="button" value="iPhone get message" onclick="iPhoneGetText()">
+    <input type="button" value="iPhone see outbox" onclick="iPhoneSeeOutbox()">
+    <input type="button" value="iPhone see inbox" onclick="iPhoneSeeInbox()">
+    <script>
+        var friendName;
+        var text;
+        var fromName;
+        var check;
+
+        //Class Mobile
+        function Mobile(name, batery, draftedMessage, incomingText) {
+            this.name = name;
+            this.batery = batery;
+            this.draftedMessage = draftedMessage;
+            this.incomingText = incomingText;
+
+            this.power = function (iPower) {
+                //bật hoặc tắt nguồn
+                if(iPower%2 == 0){
+                    alert("The phone is powered on");
+                    check = true;
+                }else {
+                    alert("The phone is powered off");
+                    check = false;
+                }
+
+            };
+
+            this.powerStatus = function(){
+                //Kiểm tra tình trạng điện thoại đang bật hay tắt
+                if(check){
+                    return true;
+                }
+                return false;
+            };
+
+            this.charge = function () {
+                //sạc pin
+                if(this.batery > 100){
+                    alert("pin da day")
+                }else {
+                    this.batery += 5;
+                    alert(this.batery+"%");
+                }
+            };
+
+            this.checkCharge = function () {
+                //kiểm tra tình trạng pin đang còn bao nhiêu phần trăm
+                if(this.batery <= 0){
+                    return false;
+                }
+                return true;
+            };
+
+            this.createText = function () {
+                //Soạn tin nhắn
+                if(this.checkCharge()){
+                    if(this.powerStatus()){
+                        text = prompt("enter your message");
+                        friendName = prompt("enter a friend that you want to text to");
+                        fromName = this.name;
+                        this.draftedMessage.push({name: friendName,
+                            value: text});
+                    }else {
+                        alert("Your phone has been powered off");
+                    }
+                    this.batery -= 5;
+                }else {
+                    alert("not enough battery to use");
+                }
+
+            };
+
+            this.getText = function () {
+                //nhận tin nhắn
+                if(this.checkCharge()){
+                    if(this.powerStatus()){
+                        if(this.name == friendName){
+                            alert("Được gửi từ: " + fromName +" | " + "nội dung: " + text);
+                            this.incomingText.push({name:fromName,
+                                value: text});
+                        }
+                    }else {
+                        alert("Your phone has been powered off");
+                    }
+                    this.batery -= 5;
+                }else {
+                    alert("not enough battery to use");
+                }
+            };
+
+            this.seeInbox = function () {
+                //Xem toàn bộ hộp thư đến
+                if(this.checkCharge()){
+                    if(this.powerStatus()){
+                        for (let i in this.incomingText){
+                            alert("Được gửi từ: " + this.incomingText[i].name + " | " + "nội dung: " + this.incomingText[i].value);
+                        }
+                    }else {
+                        alert("Your phone has been powered off");
+                    }
+                    this.batery -= 5;
+                }else {
+                    alert("not enough battery to use");
+                }
+            };
+
+            this.seeOutbox = function () {
+                //Xem toàn hộp thư đã gửi
+                if(this.checkCharge()){
+                    if(this.powerStatus()){
+                        for (let i in this.draftedMessage){
+                            alert("Gửi đến: " + this.draftedMessage[i].name + " | " + " nội dung: " + this.draftedMessage[i].value);
+                        }
+                    }else {
+                        alert("Your phone has been powered off");
+                    }
+                    this.batery -= 5;
+                }else {
+                    alert("not enough battery to use");
+                }
+            }
+        }
+
+        //Đối tượng nokia
+        var nokiaDraftedMessage = [];
+        var nokiaIcomingText = [];
+        var nokia = new Mobile('nokia',0,nokiaDraftedMessage,nokiaIcomingText);
+        var nokiaPower=0;
+        function NokiaPower() {
+            iPhone.power(nokiaPower);
+            nokiaPower++;
+        }
+
+        function nokiaCharge() {
+            nokia.charge();
+        }
+        function nokiaCreateMessage() {
+            nokia.createText();
+        }
+
+        function nokiaGetText() {
+            nokia.getText();
+        }
+
+        function nokiaSeeOutbox() {
+            nokia.seeOutbox();
+        }
+
+        function nokiaSeeInbox() {
+            nokia.seeInbox();
+        }
+
+        //Đối tượng iPhone
+        var iPhoneDraftedMessage = [];
+        var iPhoneIcomingText = [];
+        var iPhone = new Mobile('iPhone',0,iPhoneDraftedMessage,iPhoneIcomingText);
+        var iPhonePower=0;
+        function IPhonePower() {
+            iPhone.power(iPhonePower);
+            iPhonePower++;
+        }
+
+        function iPhoneCharge() {
+            iPhone.charge();
+        }
+        function iPhoneCreateMessage() {
+            iPhone.createText();
+        }
+
+        function iPhoneGetText() {
+            iPhone.getText();
+        }
+
+        function iPhoneSeeOutbox() {
+            iPhone.seeOutbox();
+        }
+
+        function iPhoneSeeInbox() {
+            iPhone.seeInbox();
+        }
+    </script>
+</body>
+</html>
