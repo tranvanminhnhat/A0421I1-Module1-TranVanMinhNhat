@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="pikachu_race"></div>
+<br>
+<div id="tho_race"></div>
+<br>
+<div id="rua_race"></div>
+<script>
+    function Hero(image, top, left, size){
+        this.image = image;
+        this.top = top;
+        this.left = left;
+        this.size = size;
+
+        this.getHeroElement = function(){
+            return '<img width="'+ this.size + '"' +
+                ' height="'+ this.size + '"' +
+                ' src="' + this.image +'"' +
+                ' style="top: '+this.top+'px; left:'+this.left+'px;position:absolute;" />';
+        };
+
+        this.moveRight = function(speech){
+            this.left += speech;
+            console.log('ok: ' + this.left);
+        }
+    }
+    var pikachu = new Hero('img/pikachu.png', 20, 30, 200,pikachu_sp);
+    var tho = new Hero('img/tho.jpg',200,30,200);
+    var rua = new Hero('img/rua.png',400,30,200);
+
+    var pikachu_sp = 0;
+    var tho_sp = 0;
+    var rua_sp = 0;
+    function start(){
+        if(pikachu.left < window.innerWidth - pikachu.size){
+            pikachu.moveRight(pikachu_sp);
+            if(pikachu_sp < window.innerWidth/2){
+                pikachu_sp+=1;
+            }else {
+                pikachu_sp += 0.01;
+            }
+        }
+
+        if(tho.left < window.innerWidth - tho.size){
+            tho.moveRight(tho_sp);
+            if(tho_sp < window.innerWidth/2){
+                tho_sp += 1.1;
+            }else {
+                tho_sp+=0.002;
+            }
+        }
+        if(rua.left < window.innerWidth - rua.size){
+            rua.moveRight(rua_sp);
+            rua_sp+=0.99;
+        }
+        document.getElementById('pikachu_race').innerHTML = pikachu.getHeroElement();
+        document.getElementById('tho_race').innerHTML = tho.getHeroElement();
+        document.getElementById('rua_race').innerHTML = rua.getHeroElement();
+        setTimeout(start, 500);
+    }
+    start();
+</script>
+</body>
+</html>
