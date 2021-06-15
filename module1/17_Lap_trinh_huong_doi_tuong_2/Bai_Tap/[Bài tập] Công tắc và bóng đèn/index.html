@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="display"><img src="img/tat.jpg"></div>
+    <input type="button" value="turn on" onclick="turnOn()" style="margin-top: 30px; margin-left: 80px; width: 100px; height: 50px; font-size: 20px; font-weight: bold;">
+    <input type="button" value="turn off" onclick="turnOff()"  style="margin-top: 30px; margin-left: 19px; width: 100px; height: 50px; font-size: 20px; font-weight: bold;">
+    <script>
+        // class SwitchButton{
+        //     switchOff(){
+        //         return true;
+        //     }
+        //
+        //     switchOn(){
+        //         return false;
+        //     }
+        // }
+
+        class ElectricLamp{
+            turnOff() {
+                return "<img src='img/tat.jpg'>"
+            }
+            turnOn(){
+                return "<img src='img/bat.jpg'>"
+            }
+        }
+
+        let lamp = new ElectricLamp();
+        // let button = new SwitchButton();
+
+        var sout;
+        function turnOn() {
+            sout = lamp.turnOn();
+            display();
+        }
+
+        function turnOff() {
+            sout = lamp.turnOff();
+            display();
+        }
+
+        function display() {
+            var x = document.getElementById('display').innerHTML = sout;
+        }
+
+
+    </script>
+</body>
+</html>
