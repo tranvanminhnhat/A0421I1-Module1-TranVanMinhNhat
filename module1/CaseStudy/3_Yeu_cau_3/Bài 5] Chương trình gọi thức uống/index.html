@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var productArr = [{name: 'Cafe', price: 22000, amount:0},
+            {name:'Orange juice', price: 32000, amount:0},
+            {name: 'Carrot juice', price: 29000, amount:0},
+            {name: 'Tomato juice', price: 29000, amount:0},
+            {name: 'coconut water', price: 22000, amount:0},
+            {name: 'filtered water', price: 12000, amount:0}];
+        function display() {
+            var sout = "<table style='width: 30%; height: 30%; border-collapse: collapse;'>";
+            sout += "<tr>";
+            sout += "<th style='font-weight: bold; font-size: 25px; font-family: Lato; padding: 30px;border: solid 1px black;'>" + "Drink name" + "</th>";
+            sout += "<th style='font-weight: bold; font-size: 25px; font-family: Lato; padding: 30px;border: solid 1px black;'>" + "Price" + "</th>";
+            sout += "<th style='font-weight: bold; font-size: 25px; font-family: Lato; padding: 30px;border: solid 1px black;'>" + "Amount" + "</th>";
+            sout += "</tr>";
+            for(let i = 0; i<productArr.length; i++){
+                sout += "<tr>";
+                sout += "<td style='text-align: center; font-weight: bold; font-size: larger; font-family: Lato; padding: 30px; border: solid 1px black; width: 33%;'>"+productArr[i].name+"</td>";
+                sout += "<td style='text-align: center; font-weight: bold; font-size: larger; font-family: Lato; padding: 30px; border: solid 1px black; width: 33%;'>"+productArr[i].price+"</td>";
+                sout += "<td style='text-align: center; font-weight: bold; font-size: larger; font-family: Lato; padding: 30px; border: solid 1px black; width: 33%;'>"
+                    +"<input type='text' id='"+String(i)+"' style='width: 100%; height: 100%; text-align: center; font-family: Lato; padding: 5px; border: 0; font-weight: bold; font-size: 20px'>"+"</td>";
+                sout += "</tr>";
+            }
+            sout += "</table>";
+            sout += "<div style='margin-top: 30px; margin-bottom: 30px'><span style='font-family: Lato;font-weight: bold; font-size: 20px; margin-right: 10px;'>Total:</span><span id='result' style='font-family: Lato;font-weight: bold; font-size: 20px; margin-right: 10px;'></span></div>";
+            sout += "<input type='button' value='Order' style='width: 160px; height: 50px; font-weight: bold; font-size: 20px; font-family: Lato;' onclick='order()'>";
+            document.body.innerHTML = sout;
+        }
+
+        function order() {
+            var sum = 0;
+            for(let i=0; i<productArr.length; i++){
+                productArr[i].amount = document.getElementById(String(i)).value;
+                if(productArr[i].amount == ''){
+                    productArr[i].amount = 0;
+                }else {
+                    productArr[i].amount = parseInt(productArr[i].amount);
+                }
+                sum += productArr[i].price * productArr[i].amount;
+            }
+            document.getElementById('result').innerText = sum +" VNĐ";
+        }
+        display();
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        do{
+            var number = prompt("enter a number");
+        }while (isNaN(number));
+        let str = '';
+        let arrNumber = ['không', 'một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín'];
+        for(let i = 0; i<number.length; i++){
+            str += arrNumber[parseInt(number[i])]+" ";
+        }
+        alert(str);
+    </script>
+</body>
+</html>

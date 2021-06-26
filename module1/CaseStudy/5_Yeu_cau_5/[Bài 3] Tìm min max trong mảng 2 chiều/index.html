@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var arr = new Array();
+        for(let i = 0; i<3; i++){
+            arr[i] = new Array();
+            for (let j=0; j<3; j++){
+                arr[i][j] = parseInt(prompt());
+            }
+        }
+        var max = arr[0][0];
+        for(let i = 0; i<3; i++){
+            for (let j=0; j<3; j++){
+                if(max < arr[i][j]){
+                    max = arr[i][j];
+                }
+            }
+        }
+        console.log(arr);
+        console.log(max);
+    </script>
+</body>
+</html>

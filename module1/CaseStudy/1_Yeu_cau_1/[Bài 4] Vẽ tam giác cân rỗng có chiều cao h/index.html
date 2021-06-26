@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let h = prompt("mời bạn nhập chiều cao");
+        for(let i=0; i<h; i++){
+            for(let j = h-i; j>0; j--){
+                document.write("&ensp;");
+            }
+            for (let j=1; j<=2*i+1; j++){
+                if(i==0 || i==h-1){
+                    document.write("*");
+                }else {
+                    if(j==1 || j==2*i+1){
+                        document.write("*");
+                    }else {
+                        document.write("&ensp;");
+                    }
+                }
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>

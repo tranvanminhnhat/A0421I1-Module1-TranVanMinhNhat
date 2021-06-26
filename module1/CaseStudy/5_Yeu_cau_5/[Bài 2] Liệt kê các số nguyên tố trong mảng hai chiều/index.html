@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var count = 0;
+    var arrPrimeNumber = [];
+
+    do{
+        var m = prompt("Enter the width of the matrix");
+    }while (isNaN(m) || m<=0);
+
+    do{
+        var n = prompt("Enter the height of the matrix");
+    }while (isNaN(n) || n<=0);
+
+    var arr = new Array(n);
+
+    for(let i=0; i<n; i++){
+        arr[i] = new Array(m);
+        for (let j=0; j<m; j++){
+            arr[i][j] = parseInt(prompt());
+        }
+    }
+
+    for(let i=0; i<n; i++){
+        for (let j=0; j<m; j++){
+            var sum = 0;
+            if(arr[i][j] == 1){
+                sum++;
+            }
+            for (let h=2; h<=Math.sqrt(arr[i][j]); h++){
+                if(arr[i][j]%h == 0){
+                    sum++;
+                }
+            }
+            if(sum == 0){
+                arrPrimeNumber.push(arr[i][j]);
+                count++;
+            }
+        }
+    }
+
+    console.log(arr);
+    console.log(arrPrimeNumber);
+    console.log(count);
+</script>
+</body>
+</html>

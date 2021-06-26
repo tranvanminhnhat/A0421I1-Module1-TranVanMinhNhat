@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let h = prompt("xin mời bạn nhập chiều cao của tam giác vuông cân");
+        for (let i = 0; i<h; i++){
+            for(let j = 0; j <=i; j++){
+                if(i == 0 || i == h-1){
+                    document.write("*");
+                }else {
+                    if(j==0 || j == i){
+                        document.write("*");
+                    }else {
+                        document.write("&ensp;");
+                    }
+                }
+
+            }
+            document.write("<br>")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        do{
+            var m = prompt("Enter the width of the matrix");
+        }while (isNaN(m) || m<=0);
+        do{
+            var n = prompt("Enter the height of the matrix");
+        }while (isNaN(n) || n<=0);
+        var arr = new Array(n);
+        var sum = 0;
+        for(let i=0; i<n; i++){
+            arr[i] = new Array(m);
+            for (let j=0; j<m; j++){
+                arr[i][j] = parseInt(prompt());
+                if(arr[i][j]%2 == 0){
+                    sum+=arr[i][j];
+                }
+            }
+        }
+
+        console.log(arr);
+        console.log(sum);
+    </script>
+</body>
+</html>

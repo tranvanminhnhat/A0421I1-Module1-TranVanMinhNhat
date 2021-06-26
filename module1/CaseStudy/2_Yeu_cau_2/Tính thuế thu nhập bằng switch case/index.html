@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        //Trường hợp lương 15 triệu là cao nhất
+        do{
+            var salary = parseFloat(prompt("Nhập vào tiền lương của bạn"));
+        }while (salary <= 0 || salary>15);
+
+        if(salary >= 15){
+            let incomeTax = (salary*20)/100;
+            document.write("Số tiền thuế cần phải nộp: ",incomeTax,"<br>","Tiền lương sau thuế: ",salary-incomeTax);
+        }else if(salary >= 7){
+            let incomeTax = (salary*10)/100;
+            document.write("Số tiền thuế cần phải nộp: ",incomeTax,"<br>","Tiền lương sau thuế: ",salary-incomeTax);
+        }else {
+            let incomeTax = (salary*5)/100;
+            document.write("Số tiền thuế cần phải nộp: ",incomeTax,"<br>","Tiền lương sau thuế: ",salary-incomeTax);
+        }
+    </script>
+</body>
+</html>
