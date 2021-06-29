@@ -11,25 +11,58 @@
 <br>
 <div id="rua_race"></div>
 <script>
-    function Hero(image, top, left, size){
-        this.image = image;
-        this.top = top;
-        this.left = left;
-        this.size = size;
+    class Hero{
+        constructor(image, top, left, size) {
+            this._image = image;
+            this._top = top;
+            this._left = left;
+            this._size = size;
+        }
 
-        this.getHeroElement = function(){
+        get image() {
+            return this._image;
+        }
+
+        set image(value) {
+            this._image = value;
+        }
+
+        get top() {
+            return this._top;
+        }
+
+        set top(value) {
+            this._top = value;
+        }
+
+        get left() {
+            return this._left;
+        }
+
+        set left(value) {
+            this._left = value;
+        }
+
+        get size() {
+            return this._size;
+        }
+
+        set size(value) {
+            this._size = value;
+        }
+
+        getHeroElement (){
             return '<img width="'+ this.size + '"' +
                 ' height="'+ this.size + '"' +
                 ' src="' + this.image +'"' +
                 ' style="top: '+this.top+'px; left:'+this.left+'px;position:absolute;" />';
         };
 
-        this.moveRight = function(speech){
+        moveRight (speech){
             this.left += speech;
-            console.log('ok: ' + this.left);
-        }
+        };
     }
-    var pikachu = new Hero('img/pikachu.png', 20, 30, 200,pikachu_sp);
+    var pikachu = new Hero('img/pikachu.png', 20, 30, 200);
     var tho = new Hero('img/tho.jpg',200,30,200);
     var rua = new Hero('img/rua.png',400,30,200);
 

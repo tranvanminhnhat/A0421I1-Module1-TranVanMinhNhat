@@ -7,18 +7,18 @@
 <body>
     <script>
         var fact =  parseInt(prompt("Enter the number to calculate the factorial"));
-        // var volume = 1;
-        // for (var i = 1; i <= fact; i++){
-        //     volume *=i;
-        // }
-        // document.write(volume);
-        function Fact(number) {
-            if (number == 0){
-                return 1;
-            }
-            return number * Fact(number - 1);
+        var volume = 1;
+        for (var i = 1; i <= fact; i++){
+            volume *=i;
         }
-        document.write(Fact(fact));
+        document.write(volume);
+        // function Fact(number) {
+        //     if (number == 0){
+        //         return 1;
+        //     }
+        //     return number * Fact(number - 1);
+        // }
+        // document.write(Fact(fact));
     </script>
 </body>
 </html>

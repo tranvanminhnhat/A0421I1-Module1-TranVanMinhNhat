@@ -5,47 +5,45 @@
     <title>Title</title>
 </head>
 <body>
-    <div id="display"><img src="img/tat.jpg"></div>
-    <input type="button" value="turn on" onclick="turnOn()" style="margin-top: 30px; margin-left: 80px; width: 100px; height: 50px; font-size: 20px; font-weight: bold;">
-    <input type="button" value="turn off" onclick="turnOff()"  style="margin-top: 30px; margin-left: 19px; width: 100px; height: 50px; font-size: 20px; font-weight: bold;">
     <script>
-        // class SwitchButton{
-        //     switchOff(){
-        //         return true;
-        //     }
-        //
-        //     switchOn(){
-        //         return false;
-        //     }
-        // }
+        class SwitchButton{
+            constructor(lamp, status) {
+                this.status = status;
+                this.lamp = lamp;
+            }
+            getLamp(){
+                return this.lamp;
+            }
+            setLamp(lamp){
+                this.lamp = lamp;
+            }
+            connectToLamp(Electriclamp){
+                return this.lamp = Electriclamp;
+            }
+            switchOff(){
+                this.lamp.status = false;
+                return this.status = false;
+            }
+            switchOn(){
+                this.lamp.status = true;
+                return this.status = true;
+            }
+        }
 
         class ElectricLamp{
-            turnOff() {
-                return "<img src='img/tat.jpg'>"
+            constructor(status) {
+                this.status = status;
             }
-            turnOn(){
-                return "<img src='img/bat.jpg'>"
+            getStatus(){
+                return this.status;
             }
         }
 
-        let lamp = new ElectricLamp();
-        // let button = new SwitchButton();
-
-        var sout;
-        function turnOn() {
-            sout = lamp.turnOn();
-            display();
-        }
-
-        function turnOff() {
-            sout = lamp.turnOff();
-            display();
-        }
-
-        function display() {
-            var x = document.getElementById('display').innerHTML = sout;
-        }
-
+        var electricLamp_1 = new ElectricLamp(false);
+        var switchButton_1 = new SwitchButton(electricLamp_1,false);
+        console.log(switchButton_1.switchOn());
+        console.log(switchButton_1.switchOff());
+        console.log(electricLamp_1.getStatus());
 
     </script>
 </body>

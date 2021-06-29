@@ -6,30 +6,32 @@
 </head>
 <body>
     <script>
-        function Temperature(C) {
-            this.C = C;
-
-            this.cToF = function () {
-                return (1.8*this.C + 32);
-            };
-
-            this.cToK = function () {
-                return this.C + 273.15;
-            };
-
-            this.display = function () {
+        class Temperature{
+            constructor(C) {
+                this.C = C;
+            }
+            getC () {
+                return this.C;
+            }
+            setC (C) {
+                this.C = C;
+            }
+            convertCToF () {
+                return (1.8*this.C+32);
+            }
+            convertCToK () {
+                return this.C +273.15;
+            }
+            display () {
                 if(this.C >= -273){
-                    document.write("C to F: " + this.cToF() +" ");
-                    document.write("C to K: " + this.cToK());
+                    document.write("C to F: " + this.convertCToF() +"<br>"+"C to K: " + this.convertCToK());
                 }else {
                     document.write("the temperature must be larger than -273 degrees");
                 }
             }
         }
-
-        var C = new Temperature(25);
-        C.C = -299;
-        C.display();
+        var temperature_1 = new Temperature(12);
+        temperature_1.display();
     </script>
 </body>
 </html>

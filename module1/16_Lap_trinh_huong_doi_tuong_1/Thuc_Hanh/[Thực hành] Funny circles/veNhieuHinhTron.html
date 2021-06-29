@@ -7,10 +7,44 @@
 <body>
 <canvas id="myCanvas" width="1500px" height="900px" style="border: 1px solid #d3d3d3;"></canvas>
 <script>
-    function Circle(x,y,radius) {
-        this.x = x;
-        this.y = y;
-        this.radius = radius;
+    class Circle{
+        constructor(x,y,radius,color) {
+            this.x = x;
+            this.y = y;
+            this.radius = radius;
+            this.color = color;
+        }
+        getX(){
+            return this.x;
+        }
+        setX(x){
+            this.x = x;
+        }
+        getY(){
+            return this.y;
+        }
+        setY(y){
+            this.y = y;
+        }
+        getRadius(){
+            return this.radius;
+        }
+        setRadius(radius){
+            this.radius = radius;
+        }
+        getColor(){
+            return this.color;
+        }
+        setColor(color){
+            this.color = color;
+        }
+        createCircle() {
+            var ctx = document.getElementById('myCanvas').getContext("2d");
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.radius, 0, 2*Math.PI);
+            ctx.fillStyle=this.color;
+            ctx.fill();
+        }
     }
 
     function getRandomHex() {
@@ -23,21 +57,11 @@
         var blue = getRandomHex();
         return "rgb("+red+","+green+","+blue+")";
     }
-    function createCircle() {
-        var ctx = document.getElementById('myCanvas').getContext("2d");
-        var randomX = Math.floor(Math.random()*1000);
-        var randomY = Math.floor(Math.random()*1000);
-        var color = getRandomColor();
-        var radius = Math.floor(Math.random()*200);
-        var circle = new Circle(randomX,randomY,radius);
-        ctx.beginPath();
-        ctx.arc(randomX, randomY, radius, 0, 2*Math.PI);
-        ctx.fillStyle = color;
-        ctx.fill();
-    }
-    for(let i = 1; i<=Math.floor(Math.random()*30); i++){
-        createCircle();
-    }
+    var randomX = Math.floor(Math.random()*1000);
+    var randomY = Math.floor(Math.random()*1000);
+    var radius = Math.floor(Math.random()*200);
+    var circle_1 = new Circle(randomX,randomY,radius,getRandomColor());
+    circle_1.createCircle();
 </script>
 </body>
 </html>

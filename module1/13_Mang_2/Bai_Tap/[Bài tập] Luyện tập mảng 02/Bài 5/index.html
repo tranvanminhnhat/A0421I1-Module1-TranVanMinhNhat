@@ -6,8 +6,24 @@
 </head>
 <body>
     <script>
-        let str_1 = prompt("Enter the first string");
-        let str_2 = prompt("Enter the second string");
+        let str_1_temp = prompt("Enter the first string");
+        let str_2_temp = prompt("Enter the second string");
+        function standardizeString(str){
+            var newStr = '';
+            str = str.trim();
+            for(let i=0; i<str.length; i++){
+                if(str[i]==' ' && str[i+1]==' '){
+                    newStr +='';
+                }else if(i==0 || str[i-1]==' '){
+                    newStr = newStr + str[i].toUpperCase();
+                }else {
+                    newStr = newStr + str[i].toLowerCase();
+                }
+            }
+            return newStr;
+        }
+        let str_1 = standardizeString(str_1_temp);
+        let str_2 = standardizeString(str_2_temp);
         let count = 0;
         let i = 0;
         if(str_1.length != str_2.length){

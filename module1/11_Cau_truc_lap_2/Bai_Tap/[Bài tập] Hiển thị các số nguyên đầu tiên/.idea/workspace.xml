@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e902bcb3-1bde-4ad3-80be-9745c7575a0f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../10_Cau_truc_lap_1/Thuc_Hanh/[Thực hành] Sử dụng vòng lặp lồng nhau/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../10_Cau_truc_lap_1/Thuc_Hanh/[Thực hành] Sử dụng vòng lặp lồng nhau/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../[Bài tập] Sinh bảng cửu chương/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../[Bài tập] Sinh bảng cửu chương/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../12_Mang_1/Thuc_Hanh/[Thực hành] Tìm giá trị lớn nhất trong mảng/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../12_Mang_1/Thuc_Hanh/[Thực hành] Tìm giá trị lớn nhất trong mảng/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../12_Mang_1/Thuc_Hanh/[Thực hành] Đảo ngược các phần tử trong mảng/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../12_Mang_1/Thuc_Hanh/[Thực hành] Đảo ngược các phần tử trong mảng/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../13_Mang_2/Bai_Tap/[Bài tập] Từ điển/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../13_Mang_2/Bai_Tap/[Bài tập] Từ điển/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +31,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../[Bài tập] Sinh bảng cửu chương" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../[Bài tập] Luyện tập vòng lặp 01" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -53,6 +49,12 @@
       <workItem from="1622037230619" duration="602000" />
       <workItem from="1622198927345" duration="25000" />
       <workItem from="1622419742621" duration="42000" />
+      <workItem from="1624883221052" duration="814000" />
+      <workItem from="1624884054935" duration="21000" />
+      <workItem from="1624884077060" duration="46000" />
+      <workItem from="1624884125038" duration="1060000" />
+      <workItem from="1624888670164" duration="939000" />
+      <workItem from="1624935578667" duration="576000" />
     </task>
     <servers />
   </component>
@@ -60,9 +62,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="172" y="171" key="FileChooserDialogImpl" timestamp="1622419782065">
+    <state x="172" y="171" key="FileChooserDialogImpl" timestamp="1624936156760">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="172" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1622419782065" />
+    <state x="172" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1624936156760" />
   </component>
 </project>

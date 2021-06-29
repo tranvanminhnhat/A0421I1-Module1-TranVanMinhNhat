@@ -5,18 +5,83 @@
     <title>Title</title>
 </head>
 <body>
-
+<input type="text" id="so_1">
+<br>
+<input type="text" id="so_2">
+<br>
+<input type="text" id="so_3">
+<br>
+<input type="text" id="so_4">
+<br>
+<input type="text" id="so_5">
+<br>
+<input type="text" id="so_6">
+<br>
+<input type="button" value="Mua vé chọn" onclick="chonSo()">
+<br>
+<input type="button" value="Mua vé ngẫu nhiên" onclick="soNgauNhien()">
 <script>
-    class VeSo{
-
+    function chonSo() {
+        var arrNumbers = [];
+        arrNumbers.push(document.getElementById('so_1').value);
+        arrNumbers.push(document.getElementById('so_2').value);
+        arrNumbers.push(document.getElementById('so_3').value);
+        arrNumbers.push(document.getElementById('so_4').value);
+        arrNumbers.push(document.getElementById('so_5').value);
+        arrNumbers.push(document.getElementById('so_6').value);
+        var veChon_1 = new VeSo(arrNumbers);
+        veChon_1.checkVe();
     }
-    class KhachHang{
-        constructor() {
+    function soNgauNhien() {
+        var arr = [];
+        for(let i=0; i<6;i++){
+            let x = Math.floor(Math.random()*100);
+            arr.push(x);
         }
-        chonSo(){
-
+        var veNgauNhien_1 = new VeSo(arr);
+        veNgauNhien_1.checkVe();
+    }
+    class VeSo{
+        constructor(arayNumbers) {
+            this.arrayNumbers = arayNumbers;
         }
-
+        checkVe(){
+            var result = [23, 12, 89, 34, 12, 99];
+            var checkGiaiNhat = true;
+            for(let i=0; i<6; i++){
+                if(this.arrayNumbers[i] != result[i]){
+                    checkGiaiNhat=false;
+                    break;
+                }
+            }
+            if(checkGiaiNhat){
+                alert("Bạn đã đạt giải nhất");
+            }else {
+                var checkGiaiNhi = true;
+                for(let i=5;i>=1;i--){
+                    if(this.arrayNumbers[i] != result[i]){
+                        checkGiaiNhi=false;
+                        break;
+                    }
+                }
+                if(checkGiaiNhi){
+                    alert("Bạn đã đạt giải nhì");
+                }else {
+                    var checkGiaiKhuyenKhich = true;
+                    for(let i=5; i>=3;i--){
+                        if(this.arrayNumbers[i] != result[i]){
+                            checkGiaiKhuyenKhich = false;
+                            break;
+                        }
+                    }
+                    if(checkGiaiKhuyenKhich){
+                        alert("Bạn đã đạt giải khuyến khích");
+                    }else {
+                        alert("Chúc bạn may mắn lần sau");
+                    }
+                }
+            }
+        }
     }
 </script>
 </body>

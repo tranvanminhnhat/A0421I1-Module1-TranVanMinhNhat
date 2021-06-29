@@ -5,164 +5,93 @@
     <title>Title</title>
 </head>
 <body>
-    <input type="button" value="Adam said" onclick="adamSaid()">
-    <input type="button" value="Adam eats apple" onclick="adamEatApple()">
-    <input type="button" value="Adam checks the weight of the apple" onclick="adamCheckApple()">
-    <input type="button" value="Adam identify other people" onclick="adamPersonIdentification()">
-    <br>
-    <br>
-    <br>
-    <input type="button" value="Eva said" onclick="evaSaid()">
-    <input type="button" value="Eva eats apple" onclick="evaEatApple()">
-    <input type="button" value="Eva checks the weight of the apple" onclick="evaCheckApple()">
-    <input type="button" value="Eva identify other people" onclick="evaPersonIdentification()">
     <script>
         class Apple{
             constructor(weight) {
                 this.weight = weight;
             }
-
-            getWeight(){
+            getWeight() {
                 return this.weight;
             }
-
-            setWeight(weight){
+            setWeight(weight) {
                 this.weight = weight;
-            }
+            };
 
-            isEmpty(){
+            isEmpty() {
                 if(this.weight <= 0){
+                    return true;
+                }else {
                     return false;
                 }
-                return true;
             }
-
-            decrease(){
+            decreaseApple(){
                 if(this.isEmpty()){
-                    this.weight -= 1;
-                    alert("The weight of apple is " + this.weight);
+                    alert("Táo đã hết rồi");
+                }else {
+                    this.weight--;
                 }
             }
         }
 
         class Human{
-            constructor(name, gender, weight) {
+            constructor(name,gender,weight) {
                 this.name = name;
                 this.gender = gender;
                 this.weight = weight;
             }
-
             getName(){
-                return this.name
+                return this.name;
             }
-
             setName(name){
                 this.name = name;
             }
-
-            getGender(){
-                return this.gender;
-            }
-
-            setGender(gender){
-                this.gender = gender;
-            }
-
             getWeight(){
                 return this.weight;
             }
-
+            getGender(){
+                if(this.isMale()){
+                    return "Male";
+                }else {
+                    return "Female";
+                }
+            }
             setWeight(weight){
                 this.weight = weight;
             }
-
-            eatApple(){
-                var eat = confirm("do you want to eat this apple");
-                if(eat){
-                    this.weight += 1;
+            isMale(){
+                if(this.gender == 1){
+                    return true;
+                }else {
+                    return false;
                 }
             }
 
-            checkApple(str_apple){
-                alert(str_apple);
+            checkApple(apple){
+                return !apple.isEmpty();
             }
 
-            say(said){
-                console.log(said);
+            eat(apple){
+                if(this.checkApple()){
+                    apple.decreaseApple();
+                    this.weight++;
+                }else {
+                    alert("Táo đã hết");
+                }
             }
-
-            PersonIdentification(name){
-                alert("name: " + name.name + " | " + "gender: " + name.gender + " | " + "weight: " + name.weight);
+            getInfo(human){
+                alert(human.name + " " +human.weight + " " +human.getGender());
             }
         }
-
+        var adam = new Human("adam", 1, 65);
+        var eva = new Human("eva", 2, 55);
         var apple = new Apple(10);
-
-        //Đối tượng adam
-        var adam = new Human('Adam', 'male', 70);
-
-        function adamSaid(){
-            let said = prompt("Adam is speaking");
-            adam.say(said);
-        }
-
-        function adamEatApple() {
-            if(apple.isEmpty()){
-                adam.setWeight(adam.getWeight()+1);
-                alert("The weight of Adam is " + adam.weight);
-                apple.decrease();
-            }else {
-                alert("The apple is over")
-            }
-        }
-
-        function adamCheckApple() {
-            if(apple.weight < 0){
-                adam.checkApple("The apple is over")
-            }else {
-                adam.checkApple("The weight of the apple is " + apple.weight);
-            }
-        }
-
-        function adamPersonIdentification(){
-            let name = prompt("enter a name");
-            if(name == eva.name.toLowerCase()){
-                adam.PersonIdentification(eva);
-            }
-        }
-
-        //Đối tượng eva
-        var eva = new Human('Eva', 'female', 55);
-
-        function evaSaid(){
-            let said = prompt("Eva is speaking");
-            eva.say(said);
-        }
-
-        function evaEatApple() {
-            if(apple.isEmpty()){
-                eva.setWeight(eva.getWeight()+1);
-                alert("The weight of Eva is " + eva.weight);
-                apple.decrease();
-            }else {
-                alert("The apple is over")
-            }
-        }
-
-        function evaCheckApple() {
-            if(apple.weight < 0){
-                eva.checkApple("The apple is over")
-            }else {
-                eva.checkApple("The weight of the apple is " + apple.weight);
-            }
-        }
-
-        function evaPersonIdentification(){
-            let name = prompt("enter a name");
-            if(name == adam.name.toLowerCase()){
-                eva.PersonIdentification(eva);
-            }
-        }
+        adam.eat();
+        eva.eat();
+        alert(apple.weight);
+        alert(adam.weight);
+        alert(eva.weight);
+        adam.getInfo(eva);
+        eva.getInfo(eva);
     </script>
 </body>
 </html>

@@ -7,32 +7,45 @@
 <body>
     <canvas id="myCanvas" width="1500" height="900" style="border: 1px solid #d3d3d3;"></canvas>
     <script>
-        function Rectange(length, width) {
-            this.length = length;
-            this.width = width;
+        class Rectange{
+            constructor(length, width) {
+                this.length = length;
+                this.width = width;
+            }
+            getLength () {
+                return this.length;
+            }
 
-            this.acreage = function() {
-                return length*width;
-            };
+            setLength (length) {
+                this.length = length;
+            }
 
-            this.perimeter = function() {
-                return (length + width)*2;
-            };
+            getWidth () {
+                return this.width;
+            }
 
-            this.Display = function() {
+            setWidth (width) {
+                this.width = width;
+            }
+
+            getCreage () {
+                return this.length * this.width;
+            }
+
+            getPerimeter () {
+                return (this.length + this.width)*2;
+            }
+
+            drawRectange () {
                 var ctx = document.getElementById('myCanvas').getContext("2d");
-                var rectange = new Rectange(this.length,this.width);
                 ctx.beginPath();
-                ctx.fillRect(100,100,rectange.length,rectange.width);
+                ctx.fillRect(100,100,this.length, this.width);
             }
         }
-        var rectange = new Rectange(500,300);
-        rectange.length = 500;
-        rectange.width = 900;
-        rectange.Display();
-        var acreage = rectange.acreage();
-        var perimeter = rectange.perimeter();
-        document.write("acreage: "+acreage + " perimeter: "+perimeter);
+
+        var rectange_1 = new Rectange(100,100);
+        rectange_1.drawRectange();
+        document.write(rectange_1.getLength()+"<br>"+rectange_1.getWidth()+"<br>" + rectange_1.getCreage()+ "<br>" +rectange_1.getPerimeter())
 
 
     </script>
