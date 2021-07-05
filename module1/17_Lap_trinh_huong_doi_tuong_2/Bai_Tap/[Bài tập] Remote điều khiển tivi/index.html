@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class Remote{
+            constructor(code) {
+                this.code = code;
+            }
+            changeChannel(channel){
+                this.code.changeChannel(channel)
+            }
+            setVolume(volume){
+                this.code.setVolume(volume);
+            }
+            turnOn_Off(){
+                this.code.turnOn_Off();
+            }
+        }
+
+        class TV{
+            constructor(channelDescription, volumeStatus, status) {
+                this.channelDescription = channelDescription;
+                this.volumeStatus = volumeStatus;
+                this.status = status;
+            }
+            changeChannel(channel){
+                if(this.status){
+                    this.channelDescription = channel;
+                    alert(this.channelDescription);
+                }
+            }
+            setVolume(volume){
+                if(this.status){
+                    this.volumeStatus += volume;
+                    alert(this.volumeStatus);
+                }
+            }
+            turnOn_Off(){
+                this.status = !this.status;
+                if(this.status){
+                    alert("TV đã bật");
+                }else {
+                    alert("TV đã tắt");
+                }
+            }
+        }
+
+        let toshiba = new TV('THVL1', 4, false);
+        let remoteOfToshiba = new Remote(toshiba);
+        remoteOfToshiba.changeChannel('HN1');
+        remoteOfToshiba.setVolume(8);
+        remoteOfToshiba.turnOn_Off();
+    </script>
+</body>
+</html>
