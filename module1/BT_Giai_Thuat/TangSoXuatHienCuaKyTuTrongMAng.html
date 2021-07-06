@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        let str = prompt("mời bạn nhập vào một chuỗi");
+
+        // //In mỗi từ trên mỗi dòng
+        // for(let i of str){
+        //     document.write(i);
+        //     document.write("<br>");
+        // }
+        // //đếm số từ trong chuỗi đã cho
+        // alert(str.length);
+
+
+        //Tần số xuất hiện của các từ
+        let arr = [];
+        arr.push(str[0]);
+        for(let i=1; i<str.length;i++){
+            let temp = true;
+            for (let j=0; j<arr.length; j++){
+                if(str[i] === arr[j]){
+                    temp = false;
+                    break;
+                }
+            }
+            if(temp){
+                arr.push(str[i]);
+            }
+        }
+        let sout = "<table style='font-family: Lato; border-collapse: collapse; width: 20%;'><tr><th style='border: solid 1px black;'>kí tự</th><th style='border: solid 1px black;'>Tần số xuất hiện</th></tr>";
+        for(let i=0; i<arr.length; i++){
+            let count = 0;
+            for(let j=0; j<str.length; j++){
+                if(arr[i] === str[j]){
+                    count++;
+                }
+            }
+            sout += "<tr><td style='text-align: center; border: solid 1px black;'>"+arr[i]+"</td><td style='text-align: center;border: solid 1px black;'>"+count+"</td></tr>";
+        }
+        document.write(sout);
+    </script>
+</body>
+</html>

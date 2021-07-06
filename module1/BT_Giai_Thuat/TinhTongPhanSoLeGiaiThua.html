@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Mời bạn nhập n"));
+        let sum = 0;
+        for(let i=1; i<=(2*n-1); i=i+2){
+            sum += 1/Fact(i);
+        }
+        alert(sum);
+        function Fact(x) {
+            let temp = 1;
+            for(let i=1; i<=x; i++){
+                temp *=i;
+            }
+            return temp;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Mời bạn nhập n"));
+        let sum = 0;
+        for(let i=1; i<=n*2; i=i+2){
+            let temp = 1;
+            for(let j=1; j<=i; j++){
+                temp *=j;
+            }
+            sum += 1/temp;
+        }
+        alert(sum);
+        //Giai thừa số lẻ tương tự
+    </script>
+</body>
+</html>

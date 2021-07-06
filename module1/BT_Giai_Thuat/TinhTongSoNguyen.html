@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        do{
+            var temp = prompt("Mời bạn nhập vào một số nguyên");
+        }while(isNaN(temp) || temp<=0);
+        let sum = 0;
+        for(let i of temp){
+            sum+=parseInt(i);
+        }
+        alert(sum);
+    </script>
+</body>
+</html>

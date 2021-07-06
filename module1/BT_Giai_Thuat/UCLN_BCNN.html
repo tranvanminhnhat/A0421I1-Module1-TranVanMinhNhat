@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function UCLN(a,b) {
+            if(a>=b){
+                for(let i=b; i>=1; i--){
+                    if(a%i==0 && b%i==0){
+                        return "Ước chung lớn nhất giữa " +a +" và " +b+ " là " + i;
+                    }
+                }
+            }else {
+                for(let i=a; i>=1; i--){
+                    if(a%i==0 && b%i==0){
+                        return "Ước chung lớn nhất giữa " +a +" và " +b+ " là " + i;
+                    }
+                }
+            }
+        }
+        function BCNN(a,b) {
+            if(a>=b){
+                let i=a;
+                while (i>=a){
+                    if(i%a==0 && i%b==0){
+                        return "Bội chung nhỏ nhất giữa " +a +" và " +b+ " là " + i;
+                    }
+                    i++;
+                }
+            }else {
+                let i=b;
+                while (i>=b){
+                    if(i%a==0 && i%b==0){
+                        return "Bội chung nhỏ nhất giữa " +a +" và " +b+ " là " + i;
+                    }
+                    i++;
+                }
+            }
+        }
+        do{
+            var a = prompt("Mời bạn nhập a");
+        }while (isNaN(a) || a<=0);
+        do{
+            var b = prompt("Mời bạn nhập a");
+        }while (isNaN(b) || b<=0);
+        alert(UCLN(a,b));
+        alert(BCNN(a,b));
+    </script>
+</body>
+</html>
