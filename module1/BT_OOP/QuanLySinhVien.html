@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class Candidate{
+            constructor(code, name, birthday, mathScores, literatureScores, englishScores) {
+                this.code = code;
+                this.name = name;
+                this.birthday = birthday;
+                this.mathScores = mathScores;
+                this.literatureScores = literatureScores;
+                this.englishScores = englishScores;
+            }
+            setCode(code){
+                this.code = code;
+            }
+            getCode(){
+                return this.code;
+            }
+            setName(name){
+                this.name = name;
+            }
+            getName(){
+                return this.name;
+            }
+            setBirthday(birthday){
+                this.birthday = birthday;
+            }
+            getBirthday(){
+                return this.birthday;
+            }
+            setMathScores(mathScores){
+                this.mathScores = mathScores;
+            }
+            getMathScores(){
+                return this.mathScores;
+            }
+            setLiteratureScores(literatureScores){
+                this.literatureScores = literatureScores;
+            }
+            getLiteratureScores(){
+                return this.literatureScores;
+            }
+            setEnglishScores(englishScores){
+                this.englishScores = englishScores;
+            }
+            getEnglishScores(){
+                return this.englishScores;
+            }
+        }
+        class TestCandidate{
+            constructor(candidate) {
+                this.candidate = candidate;
+            }
+            Test(){
+                if((this.candidate.mathScores+this.candidate.literatureScores+this.candidate.englishScores) > 15){
+                    alert("Bạn đã đạt tiêu chuẩn để vào vòng trong");
+                }else if((this.candidate.mathScores+this.candidate.literatureScores+this.candidate.englishScores)<=15){
+                    alert("Bạn đã rớt vì dưới 15 điểm");
+                }
+            }
+        }
+
+        let Nhat = new Candidate('01','Minh Nhật','27/10/1999',10,10,10);
+        let test = new TestCandidate(Nhat);
+        test.Test();
+    </script>
+</body>
+</html>

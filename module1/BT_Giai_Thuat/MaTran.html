@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        do{
+            var x = prompt("Nhập số dòng của ma trận");
+        }while (isNaN(x) || x<=0);
+        do{
+            var y = prompt("Nhập số cột của ma trận");
+        }while (isNaN(y) || y<=0);
+        let a = new Array(x);
+        for(let i=0; i<x; i++){
+            a[i] = new Array(y);
+            for (let j=0; j<y; j++){
+                do{
+                    a[i][j] = prompt("xin mời bạn nhập phần tử thứ "+i+" "+j);
+                }while (isNaN(a[i][j]));
+            }
+        }
+        let sum =0;
+        for(let j=0; j<a[i].length; j++){
+            if(a[1][j]%3==0){
+                sum+=a[1][j];
+            }
+        }
+    </script>
+</body>
+</html>

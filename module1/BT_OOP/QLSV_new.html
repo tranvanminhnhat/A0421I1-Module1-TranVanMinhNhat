@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class Student{
+            constructor(id, name, birthday, gender, className, schoolYear) {
+                this.id = id;
+                this.name = name;
+                this.birthday = birthday;
+                this.gender = gender;
+                this.className = className;
+                this.schoolYear = schoolYear;
+            }
+        }
+        let studentList = [];
+        studentList.push(new Student('01','Minh Nhat', '27/10/1999', 'nam', 'A0421I1','2021'));
+        studentList.push(new Student('02','Duyen Trinh', '12/01/1999', 'nu', 'A0421I1','2021'));
+        studentList.push(new Student('03','Quoc Khanh', '13/8/1998', 'nam', 'A0421I1','2021'));
+        function display() {
+            document.body.innerText = '';
+            let result = "<input type='button' value='Add new student' onclick='showAddForm()'>";
+            result += "<table border='1' style='border-collapse: collapse'>";
+            result += "<tr><th>ID</th><th>Name</th><th>Birthday</th><th>Gender</th><th>Class name</th><th>School year</th><th>Delete</th><th>Edit</th></tr>";
+            for (let i=0; i<studentList.length; i++){
+                result+= "<tr>" + "<td>"+ studentList[i].id+"</td>"
+                +"<td>"+ studentList[i].name +"</td>"
+                +"<td>"+ studentList[i].birthday +"</td>"
+                +"<td>"+ studentList[i].gender +"</td>"
+                +"<td>"+ studentList[i].className +"</td>"
+                +"<td>"+ studentList[i].schoolYear +"</td>"
+                +"<td><input type='button' value='Delete' onclick='deleteStudent("+i+")'></td>"
+                    +"<td><input type='button' value='Edit' onclick='showEditForm("+i+")'></td>"
+                    +"</tr>";
+            }
+            result += "</table>";
+            document.write(result);
+        }
+
+        function showAddForm() {
+            document.body.innerText = '';
+            let result = "ID: <input type='text' id='id'><br>";
+            result+="Name: <input type='text' id='name'><br>";
+            result+="Birthday: <input type='text' id='birthday'><br>";
+            result+="Gender: <input type='text' id='gender'><br>";
+            result+="Class name: <input type='text' id='className'><br>";
+            result+="School year: <input type='text' id='schoolYear'><br>";
+            result += "<input type='button' value='add student' onclick='addStudent()'>";
+            document.write(result);
+        }
+
+        function addStudent() {
+            let id = document.getElementById('id').value;
+            let name = document.getElementById('name').value;
+            let birthday = document.getElementById('birthday').value;
+            let gender = document.getElementById('gender').value;
+            let className = document.getElementById('className').value;
+            let schoolYear = document.getElementById('schoolYear').value;
+            studentList.push(new Student(id,name,birthday, gender,className,schoolYear));
+            display();
+        }
+        function deleteStudent(i) {
+            if(confirm("Bạn có muốn xóa học sinh này không")){
+                studentList.splice(i,1);
+                display();
+            }
+        }
+        function showEditForm(i) {
+            document.body.innerText = '';
+            let result = "ID: <input type='text' id='id' value='"+studentList[i].id+"'><br>";
+            result+="Name: <input type='text' id='name' value='"+studentList[i].name+"'><br>";
+            result+="Birthday: <input type='text' id='birthday' value='"+studentList[i].birthday+"'><br>";
+            result+="Gender: <input type='text' id='gender' value='"+studentList[i].gender+"'><br>";
+            result+="Class name: <input type='text' id='className' value='"+studentList[i].className+"'><br>";
+            result+="School year: <input type='text' id='schoolYear' value='"+studentList[i].schoolYear+"'><br>";
+            result += "<input type='button' value='edit student' onclick='editStudent("+i+")'>";
+            document.write(result);
+        }
+        function editStudent(i) {
+            let id = document.getElementById('id').value;
+            let name = document.getElementById('name').value;
+            let birthday = document.getElementById('birthday').value;
+            let gender = document.getElementById('gender').value;
+            let className = document.getElementById('className').value;
+            let schoolYear = document.getElementById('schoolYear').value;
+            studentList[i] = new Student(id,name,birthday,gender,className,schoolYear);
+            display()
+        }
+        display();
+    </script>
+</body>
+</html>

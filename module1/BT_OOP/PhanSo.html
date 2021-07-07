@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class PhanSo{
+            constructor(a,b) {
+                this.a = a;
+                this.b = b;
+            }
+            setA(a){
+                this.a = a;
+            }
+            setB(){
+                this.b = b;
+            }
+            Tong(){
+                return this.a + this.b;
+            }
+            Hieu(){
+                return this.a - this.b;
+            }
+            Nhan(){
+                return this.a*this.b;
+            }
+            Chia(){
+                if(this.b==0){
+                    return "mẫu không thể bằng 0";
+                }else {
+                    return this.a/this.b;
+                }
+            }
+        }
+
+        let phanSo = new PhanSo(4,2);
+        alert(phanSo.Chia());
+    </script>
+</body>
+</html>

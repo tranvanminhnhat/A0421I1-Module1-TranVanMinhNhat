@@ -6,7 +6,41 @@
 </head>
 <body>
     <script>
+        //Tạo mảng
+        do{
+            var n = prompt("Mời bạn nhập số phần tử của mảng");
+        }while (isNaN(n) || n<=0);
+        let arr =[];
+        for(let i=0; i<n; i++){
+            do{
+                arr[i] = prompt("mời bạn nhập phần tử thứ "+i+1);
+            }while (isNaN(arr[i]));
+        }
+        //Tính tổng số chẵn trong mảng
+        let sum = 0;
+        for (let i=0; i<arr.length; i++){
+            if(arr[i]%2==0){
+                sum += arr[i];
+            }
+        }
+        //Kiểm tra phần tử k có trong mảng hay không
+        let k = prompt("Nhập một số");
+        if(arr.indexOf(k)==-1){
+            alert("không có phần tử "+k+" trong mảng");
+        }else {
+            alert("Có phần tử "+k+" trong mảng và nó xuất hiện ở vị trí thứ " + arr.indexOf(k));
+        }
+        //Sắp xếp mảng
+        arr.sort(function (a,b) {
+            return a-b;
+        });
 
+        //Chèn phần tử vào mảng
+        let t = prompt("nhập phần tử cần chèn vào mảng");
+        arr.push(t);
+        arr.sort(function (a,b) {
+            return a-b;
+        });
     </script>
 </body>
 </html>
