@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        //Tạo mảng
+        do{
+            var n = parseInt(prompt("Mời bạn nhập số lượng phần tử của mảng"));
+        }while (isNaN(n) || n<=0);
+        let arr = [];
+        for (let i=0; i<n; i++){
+            do{
+                arr[i] = parseInt(prompt("Mời bạn nhập phần tử thứ "+(i+1)));
+            }while (isNaN(arr[i]));
+        }
+
+        // //Thêm phần tử vào cuối mảng
+        // arr.push(6);
+
+        //Sắp xếp mảng theo thứ tự tăng dần
+        arr.sort(function (a,b) {
+            return a-b;
+        });
+
+        //In các giá trị của mảng
+        for (let i=0; i<arr.length; i++){
+            document.write(arr[i] + "<br>");
+        }
+    </script>
+</body>
+</html>

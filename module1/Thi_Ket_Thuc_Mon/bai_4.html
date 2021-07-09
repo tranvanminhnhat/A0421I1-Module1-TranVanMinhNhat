@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class Student{
+            constructor(no, fullName, birthday, averageScores) {
+                this.no = no;
+                this.fullName = fullName;
+                this.birthday = birthday;
+                this.averageScores = averageScores;
+            }
+            getNo(){
+                return this.no;
+            }
+            setNo(no){
+                this.no = no;
+            }
+            getFullName(){
+                return this.fullName;
+            }
+            setFullName(fullName){
+                this.fullName = fullName;
+            }
+            getBirthday(){
+                return this.birthday;
+            }
+            setBirthday(birthday){
+                this.birthday = birthday;
+            }
+            getAverageScores(){
+                return this.averageScores;
+            }
+            setAverageScores(averageScores){
+                this.averageScores = averageScores;
+            }
+            academicTest(){
+                if(this.averageScores > 10 || this.averageScores<0){
+                    return "error!!!";
+                }else if(this.averageScores > 8){
+                    return "Excellent student";
+                }else if(this.averageScores >= 6.5){
+                    return "Advanced student";
+                }else if(this.averageScores >= 5){
+                    return "Average student";
+                }else if(this.averageScores >= 3.5){
+                    return "Weak student";
+                }else {
+                    return "Poor student";
+                }
+            }
+            display(){
+                let sout = "<table border='1' style='border-collapse: collapse'>";
+                sout += "<tr><th>No</th><th>Full Name</th><th>Birthday</th><th>Average Scores</th><th>Classification</th></tr>";
+                sout += "<tr>";
+                sout += "<td>"+this.no+"</td>"
+                     +"<td>"+this.fullName+"</td>"
+                     +"<td>"+this.birthday+"</td>"
+                     +"<td>"+this.averageScores+"</td>"
+                     +"<td>"+this.academicTest()+"</td>";
+                sout+="</tr></table>";
+                document.write(sout);
+            }
+        }
+        let student_A = new Student('1', 'Tran Van Minh Nhat', '27/10/1999', 8);
+        student_A.display();
+    </script>
+</body>
+</html>
