@@ -8,8 +8,6 @@ public class ConvertNumberToLetters {
         System.out.println("Enter your number: ");
         int number = scanner.nextInt();
         System.out.println(convert(number));
-
-
     }
     public static String readUnits(int number){
         switch (number){
