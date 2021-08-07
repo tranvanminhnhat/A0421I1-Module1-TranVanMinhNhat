@@ -16,7 +16,7 @@ public class DeleteElementInArray {
 
         System.out.println("Enter the element of array");
         for (int i = 0; i < n; i++) {
-            System.out.print("Enter element " + i + ": ");
+            System.out.print("Enter element " + (i + 1) + ": ");
             arr[i] = scanner.nextInt();
         }
 

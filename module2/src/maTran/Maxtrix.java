@@ -8,13 +8,13 @@ public class Maxtrix {
         int row2, col2;
         Scanner scanner = new Scanner(System.in);
         do{
-            System.out.print("Nhập số hàng của ma trận a: ");
+            System.out.print("The number of row a: ");
             row1 = scanner.nextInt();
-            System.out.print("Nhập số cột của ma trận a: ");
+            System.out.print("The number of column a: ");
             col1 = scanner.nextInt();
-            System.out.print("Nhâp số hàng của ma trận b: ");
+            System.out.print("The number of row b: ");
             row2 = scanner.nextInt();
-            System.out.print("Nhập số cột của ma trận b: ");
+            System.out.print("The number of column a:  ");
             col2 = scanner.nextInt();
         }while (col1 != row1);
 
@@ -22,14 +22,14 @@ public class Maxtrix {
         int[][] B = new int[row2][col2];
         int[][] C = new int[row1][col2];
 
-        System.out.println("Nhập ma trận a");
+        System.out.println("Input matrix a");
         for (int i = 0; i < row1; i++){
             for (int j = 0; j < col1; j++){
                 System.out.print("A["+i+"]["+j+"] = ");
                 A[i][j] = scanner.nextInt();
             }
         }
-        System.out.println("Hiển thị ma trận a");
+        System.out.println("Display matrix a");
         for (int i = 0; i < row1; i++){
             for (int j = 0; j < col1; j++){
                 System.out.print(A[i][j] + "\t");
@@ -38,7 +38,7 @@ public class Maxtrix {
         }
 
 
-        System.out.println("Nhập ma trận b");
+        System.out.println("Input matrix b");
         for (int i = 0; i < row2; i++){
             for (int j = 0; j < col2; j++){
                 System.out.print("B["+i+"]["+j+"] = ");
@@ -46,7 +46,7 @@ public class Maxtrix {
             }
         }
 
-        System.out.println("hiển thị ma trận b");
+        System.out.println("Display matrix b");
         for (int i = 0; i < row2; i++){
             for (int j = 0; j < col2; j++){
                 System.out.print(B[i][j] + "\t");
@@ -62,7 +62,7 @@ public class Maxtrix {
             }
         }
 
-        System.out.println("Hiển thị ma trận C: ");
+        System.out.println("Display matrix C: ");
         for (int i = 0; i < row1; i++){
             for (int j = 0; j < col2; j++){
                 System.out.print(C[i][j] + "  ");
