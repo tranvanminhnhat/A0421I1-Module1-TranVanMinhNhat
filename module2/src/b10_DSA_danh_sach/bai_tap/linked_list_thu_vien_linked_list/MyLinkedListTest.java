@@ -43,7 +43,5 @@ public class MyLinkedListTest {
         myLinkedList.addLast(student_4);
         myLinkedList.addLast(student_5);
 
-        System.out.println(myLinkedList.constrains(student_1));
-
     }
 }

@@ -2,7 +2,7 @@ package b10_DSA_danh_sach.thuc_hanh.trien_khai_lop_linkedlist_don_gian;
 
 public class LinkedList extends Node{
     private Node head;
-    private int numNodes;
+    private int numNodes = 0;
 
     public LinkedList(Object data){
         super(data);
