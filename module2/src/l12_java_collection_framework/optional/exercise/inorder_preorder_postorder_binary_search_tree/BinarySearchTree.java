@@ -2,7 +2,6 @@ package l12_java_collection_framework.optional.exercise.inorder_preorder_postord
 
 import java.util.ConcurrentModificationException;
 import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.Stack;
 
 public class BinarySearchTree<T extends Comparable<T>> implements TreeADT<T>{

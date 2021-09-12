@@ -18,18 +18,19 @@ public class BST<T extends Comparable<T>> implements BSTADT<T>{
             return false;
         }else {
             size++;
-            insert(root, element);
+            root = insert(root, element);
             return true;
         }
     }
 
     @Override
-    public void remove(T element) {
+    public boolean remove(T element) {
         if (!search(element)){
-            return;
+            return false;
         }
         remove(root, element);
         size--;
+        return true;
     }
 
     @Override
@@ -76,15 +77,12 @@ public class BST<T extends Comparable<T>> implements BSTADT<T>{
 
     @Override
     public boolean isEmpty() {
-        if (size == 0){
-            return true;
-        }
-        return false;
+        return this.size == 0;
     }
 
     @Override
     public int getSize() {
-        return size;
+        return this.size;
     }
 
     //search
@@ -107,13 +105,10 @@ public class BST<T extends Comparable<T>> implements BSTADT<T>{
         if (node == null){
             node = new TreeNode(element, null, null);
         }else {
-            int result = element.compareTo((T)node.getData());
-            if (result < 0){
-                node.setLeft(insert(node.getLeft(), element));
-            }else if (result > 0){
+            if (element.compareTo((T)node.getData()) > 0){
                 node.setRight(insert(node.getRight(), element));
-            }else {
-                return node;
+            }else{
+                node.setLeft(insert(node.getLeft(), element));
             }
         }
         return node;

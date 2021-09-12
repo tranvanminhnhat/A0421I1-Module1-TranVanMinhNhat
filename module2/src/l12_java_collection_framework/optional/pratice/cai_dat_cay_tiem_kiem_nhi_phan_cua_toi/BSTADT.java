@@ -1,9 +1,9 @@
 package l12_java_collection_framework.optional.pratice.cai_dat_cay_tiem_kiem_nhi_phan_cua_toi;
 
-public interface BSTADT<T> {
+public interface BSTADT<T extends Comparable<T>> {
     boolean search(T element);
     boolean insert(T element);
-    void remove(T element);
+    boolean remove(T element);
     void inorder();
     void preorder();
     void postorder();

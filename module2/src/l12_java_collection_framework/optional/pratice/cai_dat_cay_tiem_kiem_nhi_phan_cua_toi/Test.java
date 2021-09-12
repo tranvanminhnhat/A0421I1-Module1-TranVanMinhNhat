@@ -8,17 +8,14 @@ public class Test {
         bst.insert(3);
         bst.insert(5);
         bst.insert(333);
-        bst.insert(-2);
-        bst.remove(12);
+        bst.insert(2);
         System.out.println( bst.search(2));
-        System.out.println(bst.getSize());
 
-        System.out.println("inorder: ");
+        System.out.print("inorder: ");
         bst.inorder();
-        System.out.println("preorder: ");
+        System.out.print("\npreorder: ");
         bst.preorder();
-        System.out.println("postorder: ");
+        System.out.print("\npostorder: ");
         bst.postorder();
-
     }
 }
