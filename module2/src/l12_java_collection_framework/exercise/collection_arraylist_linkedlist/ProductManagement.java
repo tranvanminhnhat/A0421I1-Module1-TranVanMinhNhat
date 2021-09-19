@@ -62,8 +62,6 @@ public class ProductManagement {
         }catch (Exception e){
             e.printStackTrace();
         }
-
-
     }
 
     private static void display(){
@@ -146,7 +144,6 @@ public class ProductManagement {
         }catch (Exception e){
             e.printStackTrace();
         }
-
     }
 
     private static void ascendingSort(){
