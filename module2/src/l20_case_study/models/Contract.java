@@ -1,16 +1,18 @@
 package l20_case_study.models;
 
-public class Contract {
-    private String id;
+import java.io.Serializable;
+
+public class Contract implements Serializable {
+    private int id;
     private Booking booking;
-    private String prepayment;
-    private String total;
+    private double prepayment;
+    private double total;
     private Customer customer;
 
     public Contract() {
     }
 
-    public Contract(String id, Booking booking, String prepayment, String total, Customer customer) {
+    public Contract(int id, Booking booking, double prepayment, double total, Customer customer) {
         this.id = id;
         this.booking = booking;
         this.prepayment = prepayment;
@@ -18,11 +20,11 @@ public class Contract {
         this.customer = customer;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -34,19 +36,19 @@ public class Contract {
         this.booking = booking;
     }
 
-    public String getPrepayment() {
+    public double getPrepayment() {
         return prepayment;
     }
 
-    public void setPrepayment(String prepayment) {
+    public void setPrepayment(double prepayment) {
         this.prepayment = prepayment;
     }
 
-    public String getTotal() {
+    public double getTotal() {
         return total;
     }
 
-    public void setTotal(String total) {
+    public void setTotal(double total) {
         this.total = total;
     }
 

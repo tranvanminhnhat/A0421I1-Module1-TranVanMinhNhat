@@ -1,6 +1,8 @@
 package l20_case_study.models;
 
-public class Villa extends Facility{
+import java.io.Serializable;
+
+public class Villa extends Facility implements Serializable {
     private String standardVilla;
     private double areaPool;
     private int floor;

@@ -1,25 +1,27 @@
 package l20_case_study.models;
 
-public class Room extends Facility{
-    private boolean furniture;
+import java.io.Serializable;
+
+public class Room extends Facility implements Serializable {
+    private String furniture;
 
     public Room() {
     }
 
-    public Room(boolean furniture) {
+    public Room(String furniture) {
         this.furniture = furniture;
     }
 
-    public Room(String idFacility, String nameService, double areaUse, int rentalPrice, int peopleMax, String styleRental, boolean furniture) {
+    public Room(String idFacility, String nameService, double areaUse, int rentalPrice, int peopleMax, String styleRental, String furniture) {
         super(idFacility, nameService, areaUse, rentalPrice, peopleMax, styleRental);
         this.furniture = furniture;
     }
 
-    public boolean isFurniture() {
+    public String getFurniture() {
         return furniture;
     }
 
-    public void setFurniture(boolean furniture) {
+    public void setFurniture(String furniture) {
         this.furniture = furniture;
     }
 

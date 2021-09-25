@@ -1,6 +1,8 @@
 package l20_case_study.models;
 
-public class Booking {
+import java.io.Serializable;
+
+public class Booking implements Serializable {
     private int id;
     private String startDate;
     private String endDate;
@@ -64,8 +66,8 @@ public class Booking {
                 "idCustomer='" + id + '\'' +
                 ", startDate='" + startDate + '\'' +
                 ", endDate='" + endDate + '\'' +
-                ", customer=" + customer +
-                ", facility=" + facility +
+                ", customer=" + customer.getId() +
+                ", facility=" + facility.getIdFacility() +
                 '}';
     }
 }

@@ -1,6 +1,8 @@
 package l20_case_study.models;
 
-public class House extends Facility{
+import java.io.Serializable;
+
+public class House extends Facility implements Serializable {
     private String direction;
     private int floor;
 

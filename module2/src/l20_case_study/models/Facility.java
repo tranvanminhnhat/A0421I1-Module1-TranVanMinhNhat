@@ -1,8 +1,8 @@
 package l20_case_study.models;
 
 public abstract class Facility {
-    private String idFacility;
-    private String nameService;
+    private String id;
+    private String name;
     private double areaUse;
     private int rentalPrice;
     private int peopleMax;
@@ -12,8 +12,8 @@ public abstract class Facility {
     }
 
     public Facility(String idFacility, String nameService, double areaUse, int rentalPrice, int peopleMax, String styleRental) {
-        this.idFacility = idFacility;
-        this.nameService = nameService;
+        this.id = idFacility;
+        this.name = nameService;
         this.areaUse = areaUse;
         this.rentalPrice = rentalPrice;
         this.peopleMax = peopleMax;
@@ -21,19 +21,19 @@ public abstract class Facility {
     }
 
     public String getIdFacility() {
-        return idFacility;
+        return id;
     }
 
     public void setIdFacility(String idFacility) {
-        this.idFacility = idFacility;
+        this.id = idFacility;
     }
 
     public String getNameService() {
-        return nameService;
+        return name;
     }
 
     public void setNameService(String nameService) {
-        this.nameService = nameService;
+        this.name = nameService;
     }
 
     public double getAreaUse() {
@@ -71,8 +71,8 @@ public abstract class Facility {
     @Override
     public String toString() {
         return "Facility{" +
-                "idFacility='" + idFacility + '\'' +
-                ", nameService='" + nameService + '\'' +
+                "idFacility='" + id + '\'' +
+                ", nameService='" + name + '\'' +
                 ", areaUse=" + areaUse +
                 ", rentalPrice=" + rentalPrice +
                 ", peopleMax=" + peopleMax +
