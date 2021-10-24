@@ -1,0 +1,76 @@
+.head{
+    width: 100%;
+    height: 50px;
+    background-color: orange;
+}
+.foot{
+    width: 100%;
+    height: 50px;
+    background-color: orange;
+    position: fixed;
+    bottom: 0px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left{
+    /*background-color: #33b5e5;*/
+}
+.content{
+    background-color: white;
+}
+.right{
+    background-color: green;
+}
+.left ul {
+    padding: 0px;
+    margin: 0px;
+}
+.left li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+}
+/*Màn hình điện thoại*/
+@media only screen and (max-width: 600px){
+    [class*="col-"]{
+        width: 100%;
+        color: red;
+    }
+    .row{
+        text-align: center;
+
+    }
+}
+/*màn hinh ipad*/
+@media only screen and (min-width: 601px){
+    .col-s-1 {width: 8.33333%;}
+    .col-s-2 {width: 16.66667%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33333%;}
+    .col-s-5 {width: 41.66667%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33333%;}
+    .col-s-8 {width: 66.66667%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33333%;}
+    .col-s-11 {width: 91.66667%;}
+    .col-s-12 {width: 100%;}
+}
+/*Màn hình pc*/
+@media only screen and (min-width: 769px) {
+    .col-1 {width: 8.33333%;}
+    .col-2 {width: 16.66667%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33333%;}
+    .col-5 {width: 41.66667%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33333%;}
+    .col-8 {width: 66.66667%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33333%;}
+    .col-11 {width: 91.66667%;}
+    .col-12 {width: 100%;}
+}

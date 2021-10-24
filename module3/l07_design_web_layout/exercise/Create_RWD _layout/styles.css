@@ -1,0 +1,196 @@
+/*---------------------*/
+/*------element---------*/
+/*----------------------*/
+body{
+    margin: 0;
+}
+
+/*------------------------*/
+/*---------header---------*/
+/*-------------------------*/
+#header{
+    margin: 0;
+    width: 100%;
+    height: 10em;
+    background-color: black;
+}
+/*---------logo---------*/
+#logo{
+    height: 90%;
+    width: 10%;
+    color: white;
+    position: relative;
+    float: left;
+}
+
+#logo div{
+    position: absolute;
+    font-size: 300%;
+    margin-top: 1em;
+    margin-left: 1.5em;
+}
+/*-------menu---------*/
+#menu{
+    height: 90%;
+    width: 10%;
+    color: white;
+    position: relative;
+    float: right;
+    margin-right: 3em;
+}
+#menu i{
+    color: white;
+    font-size: 250%;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+#menu i:hover{
+    color: wheat;
+    font-size: 210%;
+}
+
+#menu li{
+    list-style: none;
+}
+
+#menu li ul{
+    display: none;
+}
+
+/*----------login--------*/
+#login{
+    height: 90%;
+    width: 10%;
+    color: white;
+    position: relative;
+    float: right;
+}
+#login a{
+    float: right;
+    margin-top: 2em;
+    font-size: 200%;
+}
+/*------------------------------*/
+/*--------side-bar-left---------*/
+/*------------------------------*/
+#side-bar-left{
+    width: 100%;
+    background-color: #f1f4f5;
+    height: 5em;
+    clear: both;
+    top: 0;
+}
+
+#side-bar-left a{
+    width: 25%;
+    height: 100%;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    font-weight: 300;
+    font-size: 300%;
+    cursor: pointer;
+}
+#side-bar-left a:hover{
+    background-color: lightgray;
+}
+
+#content{
+    width: 70%;
+    float: left;
+    height: 600px;
+    background-color: white;
+}
+#side-bar-right{
+    width: 30%;
+    float: left;
+    height: 600px;
+    background-color: #f1f4f5;
+}
+
+#side-bar-right div{
+    width: 100%;
+    float: left;
+    text-align: center;
+    height: 100px;
+    font-weight: 300;
+    font-size: 250%;
+    cursor: pointer;
+    padding-top: 80px;
+}
+
+#side-bar-right div:hover{
+    background-color: lightgray;
+}
+
+#footer{
+    clear: both;
+    height: 100px;
+    width: 100%;
+    background-color: #1d2124;
+}
+
+#footer div{
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    font-size: 200%;
+}
+
+@media screen and (min-width: 1024px){
+    #header{
+        height: 6em;
+    }
+
+    #logo{
+        font-size: 70%;
+    }
+    #menu{
+        float: left;
+        width: 50%;
+    }
+    #menu i{
+        display: none;
+    }
+    #menu li ul{
+        display: block;
+        margin-top: 2.5em;
+    }
+    #menu li ul li{
+        display: inline-block;
+        width: 4em;
+    }
+    #login{
+        float: right;
+        font-size: 60%;
+        margin-right: 3em;
+    }
+    #side-bar-left{
+        width: 20%;
+        height: 600px;
+        background-color: #f1f4f5;
+        float: left;
+    }
+    #side-bar-left a{
+        width: 100%;
+        display: block;
+        height: 25%;
+    }
+    #content{
+        width: 60%;
+        height: 600px;
+        background-color: white;
+        float: left;
+    }
+    #side-bar-right{
+        width: 20%;
+        height: 600px;
+        background-color: #f1f4f5;
+        float: left;
+    }
+    footer{
+        bottom: 0;
+    }
+}

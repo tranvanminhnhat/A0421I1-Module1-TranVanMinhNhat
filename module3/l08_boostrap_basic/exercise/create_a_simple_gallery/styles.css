@@ -1,0 +1,26 @@
+@media screen and (max-width: 767px) {
+    .row div{
+        height: 60em;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .row div{
+        height: 30em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .row div{
+        height: 23em;
+    }
+}
+
+div img{
+    width: 100%;
+    height: 80%;
+}
+
+.row div div{
+    text-align: center;
+}

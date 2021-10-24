@@ -1,0 +1,142 @@
+@media only screen and (max-width: 739px) {
+    [class*="col-"]{
+        width: 100%;
+        color: red;
+    }
+}
+@media only screen and (min-width: 740px) and (max-width:1023px) {
+
+    .col-m-1 {width: 8.33333%;}
+    .col-m-2 {width: 16.66667%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33333%;}
+    .col-m-5 {width: 41.66667%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33333%;}
+    .col-m-8 {width: 66.66667%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33333%;}
+    .col-m-11 {width: 91.66667%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 1024px) {
+    .col-l-1 {width: 8.33333%;}
+    .col-l-2 {width: 16.66667%;}
+    .col-l-3 {width: 25%;}
+    .col-l-4 {width: 33.33333%;}
+    .col-l-5 {width: 41.66667%;}
+    .col-l-6 {width: 50%;}
+    .col-l-7 {width: 58.33333%;}
+    .col-l-8 {width: 66.66667%;}
+    .col-l-9 {width: 75%;}
+    .col-l-10 {width: 83.33333%;}
+    .col-l-11 {width: 91.66667%;}
+    .col-l-12 {width: 100%;}
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*----------------------------*/
+/*-----------Element-----------*/
+/*----------------------------*/
+body{
+    font-family: Arial;
+    margin: 0;
+}
+
+img{
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+/*----------------------------*/
+/*-----------Header-----------*/
+/*----------------------------*/
+#header{
+    background-image: url("img/header.png");
+    height: 100px;
+    margin: 0;
+}
+
+#header #logo i{
+    color: darkorange;
+    font-size: 60px;
+    margin: auto;
+}
+
+#menu ul{
+    margin: auto 0;
+}
+
+#menu ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 15px;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: #c58560;
+    font-size: 17px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+#login{
+    margin: auto;
+    font-size: 16px;
+    color: darkorange;
+}
+
+
+
+#nav{
+    background-color: #33b5e5;
+    height: 80px;
+    margin: 0;
+}
+
+#content{
+    height: 1000px;
+    margin: 0;
+}
+
+#content #main-content{
+    height: 100%;
+}
+
+#content #main-content #section{
+    background-image: url("img/background-section.jpg");
+    height: 50%;
+}
+
+#content #main-content #article{
+    background-image: url("img/background-section.jpg");
+    height: 50%;
+}
+
+#section .item{
+    border: 1px solid blue;
+    width: 18.2%;
+    height: 47%;
+    margin: 5px;
+}
+
+#content #aside{
+    background-image: url("img/background-section.jpg");
+    height: 100%;
+}
+
+#aside div div img{
+    width: 90%;
+    height: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+#footer{
+    background-image: url("img/header.png");
+    height: 100px;
+    margin: 0;
+}

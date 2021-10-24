@@ -448,7 +448,7 @@ add constraint hopdong_fk_cascade_delete
 foreign key (IDKhachHang) references khachhang(IDKhachHang) on delete cascade;
 
 delete from khachhang
-where khachhang.IDKhachHang in (select hopdong.IDKhachHang from hopdong where year(hopdong.NgayLamHopDong) <= 2016);
+where khachhang.IDKhachHang = 1 in (select hopdong.IDKhachHang from hopdong where year(hopdong.NgayLamHopDong) <= 2016);
 
 -- 19. Cập nhật giá cho các Dịch vụ đi kèm được sử dụng trên 5 lần trong năm 2019 lên gấp đôi.
 update dichvudikem
@@ -464,12 +464,49 @@ select khachhang.IDKhachHang, khachhang.HoTen, khachhang.Email, khachhang.SDT, k
 
 -- 21. Tạo khung nhìn có tên là V_NHANVIEN để lấy được thông tin của tất cả các nhân viên
 -- có địa chỉ là “Hải Châu” và đã từng lập hợp đồng cho 1 hoặc nhiều Khách hàng bất kỳ với ngày lập hợp đồng là “12/12/2019”
-create view v_nhanvien as
-select nhanvien.IDNhanVien, nhanvien.HoTen from nhanvien
+create or replace view v_nhanvien as
+select nhanvien.IDNhanVien, nhanvien.HoTen, nhanvien.DiaChi from nhanvien
 join hopdong on hopdong.IDNhanVien = nhanvien.IDNhanVien
-where nhanvien.DiaChi = "Hải Châu";
+where nhanvien.DiaChi = "Liên Chiểu";
 select * from v_nhanvien;
 
 -- 22. Thông qua khung nhìn V_NHANVIEN thực hiện cập nhật địa chỉ thành “Liên Chiểu” đối với tất cả các Nhân viên
 -- được nhìn thấy bởi khung nhìn này.
+update v_nhanvien set DiaChi = "Liên Chiểu";
+
+-- 23. Tạo Clustered Index có tên là IX_KHACHHANG trên bảng Khách hàng.
+-- Giải thích lý do và thực hiện kiểm tra tính hiệu quả của việc sử dụng INDEX
+-- trước khi sử dụng index
+explain select * from khachhang where khachhang.Address = "Quảng Nam";
+create index idx_khachhang on khachhang(IDKhachHang);
+-- Sau khi sử dụng index hiểu quả truy vấn sẽ nhanh hơn
+explain select * from khachhang where khachhang.Address = "Quảng Nam";
+
+-- 24. Tạo Non-Clustered Index có tên là IX_SoDT_DiaChi trên các cột SODIENTHOAI và DIACHI
+-- trên bảng KHACH HANG và kiểm tra tính hiệu quả tìm kiếm sau khi tạo Index.
+create index idx_SDT_DiChi on khachhang(SDT, Address);
+explain select * from khachhang where khachhang.Address = "Quảng Nam";
+
+-- 25. Tạo Store procedure Sp_1 Dùng để xóa thông tin của một Khách hàng nào đó với
+-- Id Khách hàng được truyền vào như là 1 tham số của Sp_1
+DELIMITER $$
+create procedure xoa_KH_theo_ID(in p_id int)
+Begin
+delete hopdongchitiet from khachhang
+join hopdong on hopdong.IDKhachHang = khachhang.IDKhachHang
+join hopdongchitiet on hopdongchitiet.IDHopDong = hopdong.IDHopDong
+where khachhang.IDKhachHang = p_id;
+delete hopdong from khachhang
+join hopdong on hopdong.IDKhachHang = khachhang.IDKhachHang
+where khachhang.IDKhachHang = p_id;
+delete khachhang from khachhang
+where khachhang.IDKhachHang = p_id;
+end $$
+DELIMITER ;
+
+call xoa_KH_theo_ID(8);
+
+-- 26.	Tạo Store procedure Sp_2 Dùng để thêm mới vào bảng HopDong với yêu cầu Sp_2 phải thực hiện kiểm tra tính hợp lệ của dữ liệu bổ sung, 
+-- với nguyên tắc không được trùng khóa chính và đảm bảo toàn vẹn tham chiếu đến các bảng liên quan.
+
 
