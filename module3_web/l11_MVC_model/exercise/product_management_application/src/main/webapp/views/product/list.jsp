@@ -20,6 +20,7 @@
         <th>Price</th>
         <th>Delete</th>
         <th>Update</th>
+        <th>Detail</th>
     </tr>
     <C:forEach items="${productList}" var="product">
         <tr>
@@ -31,6 +32,9 @@
             </td>
             <td>
                 <a href="/product?action=update&id=${product.getId()}">Update</a>
+            </td>
+            <td>
+                <a href="/product?action=detail&id=${product.getId()}">Detail</a>
             </td>
         </tr>
     </C:forEach>

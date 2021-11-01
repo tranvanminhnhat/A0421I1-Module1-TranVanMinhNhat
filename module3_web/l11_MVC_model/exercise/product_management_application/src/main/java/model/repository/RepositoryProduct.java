@@ -14,4 +14,6 @@ public interface RepositoryProduct {
     void update(int id, Product product);
 
     void remove(int id);
+
+    Product search(String name);
 }

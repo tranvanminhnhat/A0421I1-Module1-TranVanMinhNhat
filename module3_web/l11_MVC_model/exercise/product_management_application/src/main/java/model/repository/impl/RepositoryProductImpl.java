@@ -43,4 +43,14 @@ public class RepositoryProductImpl implements RepositoryProduct {
     public void remove(int id) {
         products.remove(id);
     }
+
+    @Override
+    public Product search(String name) {
+        for (Product product: new ArrayList<>(products.values())) {
+            if (product.getName().equals(name)){
+                return product;
+            }
+        }
+        return null;
+    }
 }

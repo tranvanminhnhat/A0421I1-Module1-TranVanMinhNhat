@@ -32,4 +32,9 @@ public class ServiceProductImpl implements ServiceProduct {
     public void remove(int id) {
         repositoryProduct.remove(id);
     }
+
+    @Override
+    public Product search(String name) {
+        return repositoryProduct.search(name);
+    }
 }

@@ -12,7 +12,11 @@
     <title>$Title$</title>
   </head>
   <body>
-  <c:redirect url="/product">
-  </c:redirect>
+  <h1>Home</h1>
+  <form method="post" action="/product?action=search">
+    <input type="text" id="search" name="search" placeholder="Find product by name">
+    <input type="submit" value="Search">
+  </form>
+  <h3><a href="/product">List Product</a></h3>
   </body>
 </html>
