@@ -7,11 +7,11 @@ import java.util.List;
 public interface CustomerRepository {
     List<Customer> findAll();
 
-    void save(Customer customer);
+    boolean save(Customer customer);
 
     Customer findById(int id);
 
-    void update(int id, Customer customer);
+    boolean update(int id, Customer customer);
 
-    void remove(int id);
+    boolean remove(int id);
 }

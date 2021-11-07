@@ -13,6 +13,9 @@
 </head>
 <body>
 <a href="/customer?action=create">create a customer</a>
+<C:if test="${message != null}">
+    <strong style="color: red">${message}</strong>
+</C:if>
 <table border="1">
     <tr>
         <th>Name</th>

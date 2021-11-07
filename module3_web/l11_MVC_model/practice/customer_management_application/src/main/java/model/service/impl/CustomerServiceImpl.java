@@ -15,8 +15,8 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public void save(Customer customer) {
-        customerRepository.save(customer);
+    public boolean save(Customer customer) {
+        return customerRepository.save(customer);
     }
 
     @Override
@@ -25,12 +25,12 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public void update(int id, Customer customer) {
-        customerRepository.update(id, customer);
+    public boolean update(int id, Customer customer) {
+        return customerRepository.update(id, customer);
     }
 
     @Override
-    public void remove(int id) {
-        customerRepository.remove(id);
+    public boolean remove(int id) {
+        return customerRepository.remove(id);
     }
 }

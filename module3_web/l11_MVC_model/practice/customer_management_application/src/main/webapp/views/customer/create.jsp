@@ -13,27 +13,11 @@
 </head>
 <body>
 <form method="post">
-    <fieldset>
-        <legend>Customer information</legend>
-        <table>
-            <tr>
-                <td>Name:</td>
-                <td><input type="text" name="name" id="name"></td>
-            </tr>
-            <tr>
-                <td>Email:</td>
-                <td><input type="text" name="email" id="email"></td>
-            </tr>
-            <tr>
-                <td>Address:</td>
-                <td><input type="text" name="address" id="address"></td>
-            </tr>
-            <tr>
-                <td><a href="/customer">Back to list</a></td>
-                <td><input type="submit" value="Create customer"></td>
-            </tr>
-        </table>
-    </fieldset>
+    Name: <input type="text" id="name" name="name">
+    Email: <input type="text" id="email" name="email">
+    Address: <input type="text" id="address" name="address">
+    <a href="/customer">Back to list</a>
+    <input type="submit" value="Create Customer">
 </form>
 </body>
 </html>

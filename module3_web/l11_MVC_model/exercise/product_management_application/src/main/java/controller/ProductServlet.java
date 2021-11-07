@@ -157,7 +157,7 @@ public class ProductServlet extends javax.servlet.http.HttpServlet {
     }
 
     private void showListForm(HttpServletRequest request, HttpServletResponse response) {
-        request.setAttribute("productList", serviceProduct.findAll());
+        request.setAttribute("productList", this.serviceProduct.findAll());
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("views/product/list.jsp");
         try {
             requestDispatcher.forward(request, response);

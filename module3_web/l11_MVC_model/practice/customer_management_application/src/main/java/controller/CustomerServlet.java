@@ -34,15 +34,20 @@ public class CustomerServlet extends javax.servlet.http.HttpServlet {
     }
 
     private void createCustomer(HttpServletRequest request, HttpServletResponse response) {
+        int id = (int)Math.random()*1000;
         String name = request.getParameter("name");
         String email = request.getParameter("email");
         String address = request.getParameter("address");
-        int id = (int)(Math.random() * 10000);
+
 
         Customer customer = new Customer(id, name, email, address);
-        customerService.save(customer);
-        request.setAttribute("message", "Thêm mới thành công");
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/views/customer/list.jsp");
+        boolean check = customerService.save(customer);
+        if (check){
+            request.setAttribute("message", "Create Successfully");
+        }else {
+            request.setAttribute("message", "Create Unsuccessfully");
+        }
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("views/customer/list.jsp");
         request.setAttribute("customerList", customerService.findAll());
         try {
             requestDispatcher.forward(request,response);
@@ -58,19 +63,16 @@ public class CustomerServlet extends javax.servlet.http.HttpServlet {
         String name = request.getParameter("name");
         String email = request.getParameter("email");
         String address = request.getParameter("address");
-        Customer customer = customerService.findById(id);
-        RequestDispatcher requestDispatcher;
-        if (customer == null){
-            requestDispatcher = request.getRequestDispatcher("error-404.jsp");
+
+        Customer customer = new Customer(id, name, email, address);
+        boolean check = customerService.update(id, customer);
+        if (check){
+            request.setAttribute("message", "update successfully");
         }else {
-            customer.setName(name);
-            customer.setEmail(email);
-            customer.setAddress(address);
-            customerService.update(id, customer);
-            request.setAttribute("message", "Update successfully");
-            request.setAttribute("customer", customer);
-            requestDispatcher = request.getRequestDispatcher("views/customer/update.jsp");
+            request.setAttribute("message", "update unsuccessfully");
         }
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("views/customer/list.jsp");
+        request.setAttribute("customerList", customerService.findAll());
         try {
             requestDispatcher.forward(request, response);
         } catch (ServletException e) {
@@ -84,12 +86,21 @@ public class CustomerServlet extends javax.servlet.http.HttpServlet {
         int id = Integer.parseInt(request.getParameter("id"));
         Customer customer = customerService.findById(id);
         RequestDispatcher requestDispatcher;
+        boolean check = customerService.remove(id);
         if (customer == null){
             requestDispatcher = request.getRequestDispatcher("error-404.jsp");
         }else {
-            customerService.remove(id);
+            if (check){
+                request.setAttribute("message", "Delete Successfully");
+            }else {
+                request.setAttribute("message", "Delete Unsuccessfully");
+            }
+            requestDispatcher = request.getRequestDispatcher("views/customer/list.jsp");
+            request.setAttribute("customerList", customerService.findAll());
             try {
-                response.sendRedirect("/customer");
+                requestDispatcher.forward(request, response);
+            } catch (ServletException e) {
+                e.printStackTrace();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -122,7 +133,7 @@ public class CustomerServlet extends javax.servlet.http.HttpServlet {
         try {
             requestDispatcher.forward(request, response);
         } catch (ServletException e) {
-
+            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
