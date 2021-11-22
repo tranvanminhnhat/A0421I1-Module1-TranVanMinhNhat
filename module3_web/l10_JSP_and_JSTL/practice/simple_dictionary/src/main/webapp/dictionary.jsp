@@ -11,27 +11,30 @@
 <html>
 <head>
     <title>Simple Dictionary</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-    <%
-        Map<String, String> dic = new HashMap<>();
-    %>
+<%
+    Map<String, String> dic = new HashMap<>();
+%>
 
-    <%
-        PrintWriter writer = response.getWriter();
-        dic.put("Hello", "Xin Chào");
-        dic.put("Goodbye", "Tạm biệt");
-        dic.put("Book", "Quyển vở");
-        dic.put("Computer", "Máy tính");
+<%
+    PrintWriter writer = response.getWriter();
+    dic.put("Hello", "Xin Chào");
+    dic.put("Goodbye", "Tạm biệt");
+    dic.put("Book", "Quyển vở");
+    dic.put("Computer", "Máy tính");
 
-        String search = request.getParameter("search");
-        String result = dic.get(search);
-        if (result != null){
-            writer.println("Word: " + search);
-            writer.println("Result: " + result);
-        } else {
-            writer.println("Not found");
-        }
-    %>
+    String search = request.getParameter("search");
+    String result = dic.get(search);
+
+    if (result != null) {
+        writer.println("Word: " + search);
+        writer.println("Result: " + result);
+    } else {
+        writer.println("Not found");
+    }
+%>
 </body>
 </html>

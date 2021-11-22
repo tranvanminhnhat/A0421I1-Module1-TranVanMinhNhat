@@ -10,20 +10,26 @@
 <html>
 <head>
     <title>Customer list</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
 <body>
 <a href="/customer?action=create">create a customer</a>
 <C:if test="${message != null}">
     <strong style="color: red">${message}</strong>
 </C:if>
-<table border="1">
+
+<table class="table">
+    <thead class="thead-dark">
     <tr>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Address</th>
-        <th>Delete</th>
-        <th>Update</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Address</th>
+        <th scope="col">Delete</th>
+        <th scope="col">Update</th>
     </tr>
+    </thead>
+    <tbody>
     <C:forEach items="${customerList}" var="customer">
         <tr>
             <td>${customer.getName()}</td>
@@ -37,6 +43,8 @@
             </td>
         </tr>
     </C:forEach>
+    </tbody>
 </table>
+
 </body>
 </html>
