@@ -17,50 +17,28 @@ public class SongRepository {
     public void save(Song song) {
         entityManager.persist(song);
     }
-//
-//    public void updateStudent(Song student) {
-//        entityManager.merge(student);
-//    }
+
+    public void updateSong(Song song) {
+        entityManager.merge(song);
+    }
+
+    public void remove(Song song){
+        entityManager.remove(entityManager.merge(song));
+    }
 
     public List<Song> getList() {
         return entityManager.createQuery("Select s from Song s").getResultList();
     }
-//
-//    public void searchStudent(int id) {
-//        Song student = entityManager.find(Song.class, id);
-//        entityManager.remove(student);
-//    }
-//
-//    public Song findById(int id) {
-//        return entityManager.find(Song.class, id);
-//    }
-//
-//    public List<Song> findStudentByName(String name) {
-//        List<Song> students = entityManager.createQuery(
-//                "select s from Song s where s.name like : name")
-//                .setParameter("name", "%" + name + "%")
-//                .getResultList();
-//        return students;
-//    }
-//
-//    /*
-//        numberPage: số trang
-//        recordOnPage: số record trên mỗi trang
-//     */
-//    public List<Song> findStudentByNameWithPaging(String name, int numberPage, int recordOnPage) {
-//        List<Song> students = entityManager.createQuery(
-//                        "select s from Song s where s.name like :name")
-//                .setParameter("name", "%" + name + "%")
-//                .setFirstResult((numberPage - 1) * recordOnPage)
-//                .setMaxResults(recordOnPage)
-//                .getResultList();
-//        return students;
-//    }
-//
-//    public List<Song> findStudentByAddress(String address) {
-//        List<Song> students = entityManager.createNamedQuery("findByAddress")
-//                .setParameter("address", "%" + address + "%")
-//                .getResultList();
-//        return students;
-//    }
+
+    public Song findBySong(String song) {
+        return entityManager.find(Song.class, song);
+    }
+
+    public List<Song> findSongByName(String song) {
+        List<Song> songs = entityManager.createQuery(
+                "select s from Song s where s.song like : name")
+                .setParameter("name", "%" + song + "%")
+                .getResultList();
+        return songs;
+    }
 }
