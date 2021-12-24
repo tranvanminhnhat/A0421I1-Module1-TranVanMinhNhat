@@ -22,6 +22,7 @@ public class PhoneNumber implements Validator {
         return PhoneNumber.class.isAssignableFrom(clazz);
     }
 
+
     public void validate(Object target, Errors errors){
         PhoneNumber phoneNumber = (PhoneNumber) target;
         String number = phoneNumber.getNumber();
