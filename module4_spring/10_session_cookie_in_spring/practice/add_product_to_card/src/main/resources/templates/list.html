@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+</head>
+<body>
+<!--Header-->
+
+<header style="text-align: center;">
+    <h1>List Product</h1>
+</header>
+
+<!--Content-->
+<div class="row">
+    <div class="card col-3" th:each="product : ${products}">
+        <img th:src="@{'/img/' + ${product.img}}" class="card-img-top">
+        <div class="card-body">
+            <div class="row">
+                 <div class="col-6">
+                     <h5 class="card-title" th:text="${product.nameProduct}"></h5>
+                 </div>
+                <div class="card-text col-6">
+                    <span style="color: #4e555b; font-size: 13px; text-decoration-line: line-through" th:text="${product.price}"></span>
+                    <span style="font-size: 18px;" th:text="${product.discount}">Discount</span>
+                </div>
+            </div>
+            <a th:href="@{/product/view-product/{id}(id = ${product.idProduct})}" class="btn btn-primary">Detail</a>
+        </div>
+    </div>
+</div>
+<div>
+    <a th:href="@{/product/view-create}">Create A New Product</a>
+</div>
+</body>
+</html>
