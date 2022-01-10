@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>List Smartphone</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        function searchTitle() {
+            let search = $('#search').val();
+
+            console.log(search);
+
+            $.ajax({
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                type: "GET",
+                url: "/blogs/search?search=" + search,
+                success: function (data) {
+                    //Hiển thị danh sách được tìm kiếm
+                    let content = '    <tr>\n' +
+                        '                   <td>title</td>\n' +
+                        '                   <td>content</td>\n' +
+                        '                   <td>author</td>\n' +
+                        '                   <td>date</td>\n' +
+                        '                   <td>Delete</td>' +
+                        '               </tr>';
+                    for (let i = 0; i < data.length; i++) {
+                        content += getBlog(data[i]);
+                    }
+                    document.getElementById("blogList").innerHTML = content;
+                }
+            })
+        }
+
+        function getBlog(blog) {
+            return `<tr>
+                        <td>${blog.title}</td>
+                        <td>${blog.content}</td>
+                        <td>${blog.author}</td>
+                        <td>${blog.date}</td>
+                        <td><a class="deleteBlog" href="${blog.id}">Delete</a></td>
+                    </tr>`
+        }
+
+        function successHandler() {
+            $.ajax({
+                type: "GET",
+                url: "/blogs",
+                success: function (data) {
+                    // Hiển thị danh sách
+                    let content = '    <tr>\n' +
+                        '                   <td>title</td>\n' +
+                        '                   <td>content</td>\n' +
+                        '                   <td>author</td>\n' +
+                        '                   <td>date</td>\n' +
+                        '                   <td>Delete</td>' +
+                        '               </tr>';
+                    for (let i = 0; i < data.length; i++) {
+                        content += getBlog(data[i]);
+                    }
+                    document.getElementById("blogList").innerHTML = content;
+                }
+            });
+        }
+
+        function addNewBlog() {
+            // Lay du lieu
+            let title = $('#title').val();
+            let content = $('#content').val();
+            let author = $('#author').val();
+            let date = $('#date').val();
+            let newBlog = {
+                title: title,
+                content: content,
+                author: author,
+                date: date
+            }
+
+            // Goi Ajax
+            $.ajax({
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                type: "POST",
+                data: JSON.stringify(newBlog),
+                url: "/blogs",
+                success: successHandler
+            });
+            event.preventDefault();
+        }
+
+        $(document).ready(function () {
+            $('.deleteBlog').click(function (event) {
+                let a = $(this);
+                let blogId = a.attr("href");
+
+                $.ajax({
+                    type: "DELETE",
+                    url: `/blogs/${blogId}`,
+                    success: function (data) {
+                        a.parent().parent().remove();
+                    }
+                });
+                event.preventDefault();
+            })
+        });
+    </script>
+</head>
+<body>
+<form id="add-blog">
+    <table>
+        <tr>
+            <td>Title:</td>
+            <td><input type="text" id="title" placeholder="title"/></td>
+        </tr>
+        <tr>
+            <td>Content:</td>
+            <td><input type="text" id="content" placeholder="content"/></td>
+        </tr>
+        <tr>
+            <td>Author:</td>
+            <td><input type="text" id="author" placeholder="author"/></td>
+        </tr>
+        <tr>
+            <td>Date:</td>
+            <td><input type="text" id="date" placeholder="date"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Add" onclick="addNewBlog()"/></td>
+        </tr>
+    </table>
+</form>
+
+<input type="text" id="search" placeholder="search here">
+<button onclick="searchTitle()">Search</button>
+
+
+<h1>Smartphone List</h1>
+<table id="blogList">
+    <tr>
+        <td>title</td>
+        <td>content</td>
+        <td>author</td>
+        <td>Date</td>
+    </tr>
+    <th:block th:each="blog : ${blogs}">
+        <tr>
+            <td th:text="${blog.title}"></td>
+            <td th:text="${blog.content}"></td>
+            <td th:text="${blog.author}"></td>
+            <td th:text="${blog.date}"></td>
+            <td><a class="deleteBlog" th:href="${blog.getId()}">Delete</a></td>
+        </tr>
+    </th:block>
+</table>
+// Con chức năng load thêm
+</body>
+</html>
