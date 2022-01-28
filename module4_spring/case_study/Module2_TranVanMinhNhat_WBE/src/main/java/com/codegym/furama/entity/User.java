@@ -8,18 +8,25 @@ import java.util.Set;
 @Entity
 public class User {
     @Id
+    private Integer userId;
+
     private String username;
 
     private String password;
 
-    @ManyToMany()
-    @JoinTable(name = "user_role",
-            joinColumns = @JoinColumn(name = "userName"),
-            inverseJoinColumns = @JoinColumn(name = "roleId"))
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     @JsonManagedReference
-    private Set<Role> roles;
+    private Set<UserRole> userRoles;
 
     public User() {
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
     public String getUsername() {
@@ -38,11 +45,11 @@ public class User {
         this.password = passWord;
     }
 
-    public Set<Role> getRoles() {
-        return roles;
+    public Set<UserRole> getUserRoles() {
+        return userRoles;
     }
 
-    public void setRoles(Set<Role> roles) {
-        this.roles = roles;
+    public void setUserRoles(Set<UserRole> userRoles) {
+        this.userRoles = userRoles;
     }
 }

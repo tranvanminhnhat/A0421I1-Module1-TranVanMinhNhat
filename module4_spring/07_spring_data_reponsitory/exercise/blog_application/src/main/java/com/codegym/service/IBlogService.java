@@ -9,4 +9,8 @@ import org.springframework.stereotype.Service;
 @Service
 public interface IBlogService extends IGeneralService<Blog>{
     Page<Blog> findAll(Pageable pageable);
+
+    Page<Blog> findAllDesc(Pageable pageable);
+
+    Page<Blog> findAllByTitle(String title, Pageable pageable);
 }

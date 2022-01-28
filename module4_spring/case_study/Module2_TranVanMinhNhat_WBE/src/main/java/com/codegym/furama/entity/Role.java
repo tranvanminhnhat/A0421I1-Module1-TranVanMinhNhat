@@ -1,6 +1,7 @@
  package com.codegym.furama.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -13,9 +14,9 @@ public class Role {
 
     private String roleName;
 
-    @ManyToMany(mappedBy = "roles")
-    @JsonBackReference
-    private Set<User> users;
+    @OneToMany(mappedBy = "role", cascade = CascadeType.ALL)
+    @JsonManagedReference
+    private Set<UserRole> userRoles;
 
     public Role() {
     }
@@ -36,11 +37,11 @@ public class Role {
         this.roleName = roleName;
     }
 
-    public Set<User> getUsers() {
-        return users;
+    public Set<UserRole> getUserRoles() {
+        return userRoles;
     }
 
-    public void setUsers(Set<User> users) {
-        this.users = users;
+    public void setUserRoles(Set<UserRole> userRoles) {
+        this.userRoles = userRoles;
     }
 }

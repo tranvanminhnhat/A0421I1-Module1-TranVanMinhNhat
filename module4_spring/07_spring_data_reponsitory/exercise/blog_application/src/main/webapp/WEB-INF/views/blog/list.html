@@ -6,6 +6,13 @@
 </head>
 <body>
 <a href="/blog/create">Create new Blog</a>
+<form th:action="@{/blog/sort}" method="post">
+    <input type="submit" value="Desc Sort">
+</form>
+<form th:action="@{/blog/search}" method="post">
+    <input type="text" name="title">
+    <input type="submit" value="Search by title">
+</form>
     <table border="1">
         <tr>
             <th>Blog Title</th>

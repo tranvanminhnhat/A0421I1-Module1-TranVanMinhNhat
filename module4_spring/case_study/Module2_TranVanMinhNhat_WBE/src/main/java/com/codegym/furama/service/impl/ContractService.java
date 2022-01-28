@@ -8,6 +8,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -18,6 +19,11 @@ public class ContractService implements IContractService {
     @Override
     public void save(Contract contract) {
         contractRepository.save(contract);
+    }
+
+    @Override
+    public Iterable<Contract> findAll() {
+        return contractRepository.findAll();
     }
 
     @Override

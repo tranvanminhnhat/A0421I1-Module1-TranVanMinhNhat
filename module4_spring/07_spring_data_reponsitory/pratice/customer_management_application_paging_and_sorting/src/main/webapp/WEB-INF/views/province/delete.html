@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Delete Province</title>
+    <title>Delete province</title>
 </head>
 <body>
 <h1>Delete province</h1>
@@ -12,7 +12,7 @@
 </p>
 <form th:action="@{/delete-province}" th:object="${province}" method="post">
     <input th:type="hidden" name="id" th:field="*{id}">
-    <table border="1">
+    <table>
         <tr>
             <td>Name:</td>
             <td th:text="${province.name}"></td>

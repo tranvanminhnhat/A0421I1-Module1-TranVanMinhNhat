@@ -21,6 +21,22 @@ public class BlogController {
     @Autowired
     private ICategoryService categoryService;
 
+    @PostMapping("/sort")
+    public ModelAndView showListDesc(Pageable pageable){
+        Page<Blog> blogs = blogService.findAllDesc(pageable);
+        ModelAndView modelAndView = new ModelAndView("blog/list");
+        modelAndView.addObject("blogs", blogs);
+        return modelAndView;
+    }
+
+    @PostMapping("search")
+    public ModelAndView showSearchedList(@RequestParam String title, Pageable pageable){
+        Page<Blog> blogs = blogService.findAllByTitle(title, pageable);
+        ModelAndView modelAndView = new ModelAndView("blog/list");
+        modelAndView.addObject("blogs", blogs);
+        return modelAndView;
+    }
+
     @GetMapping("/create")
     public ModelAndView showCreateForm(){
         ModelAndView modelAndView = new ModelAndView("blog/create");
