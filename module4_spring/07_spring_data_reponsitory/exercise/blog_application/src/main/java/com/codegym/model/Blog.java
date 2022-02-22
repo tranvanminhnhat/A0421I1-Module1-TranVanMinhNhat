@@ -15,7 +15,7 @@ public class Blog {
     private Date date;
 
     @ManyToOne
-    @JoinColumn(name = "categoryId")
+    @JoinColumn(name = "categoryId", nullable = false, referencedColumnName = "categoryId")
     private Category category;
 
     public Blog() {
