@@ -1,0 +1,23 @@
+<h3>Calculation</h3>
+<div>
+  <label>A</label>
+  <br>
+  <input type="text" id="A" placeholder="A" [(ngModel)]="a">
+</div>
+<br>
+<div>
+  <label>B</label>
+  <br>
+  <input type="text" id="B" placeholder="B" [(ngModel)]="b">
+</div>
+<br>
+<div>
+  <input type="button" value="+" (click)="sum(a, b)">
+  <input type="button" value="-" (click)="dvide(a, b)">
+  <input type="button" value="*" (click)="multiple(a, b)">
+  <input type="button" value="/" (click)="dvide(a, b)">
+</div>
+<br>
+<div>
+  <input class="output" [(ngModel)]="result">
+</div>
