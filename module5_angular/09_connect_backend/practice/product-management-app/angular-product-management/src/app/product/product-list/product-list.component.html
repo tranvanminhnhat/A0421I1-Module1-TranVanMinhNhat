@@ -1,0 +1,30 @@
+<a [routerLink]="['/product/create']">Create Product</a>
+
+<!--Show List Product-->
+<form [formGroup]="searchForm" (ngSubmit)="search()">
+  <input type="text" name="id" formControlName="id">
+  <button type="submit">Search</button>
+</form>
+
+
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Description</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  <tr *ngFor="let product of productList">
+    <td>{{product.id}}</td>
+    <td>{{product.name}}</td>
+    <td>{{product.price}}</td>
+    <td>{{product.description}}</td>
+    <td (click)="updateProduct(product)">Update</td>
+    <td (click)="deleteProduct(product)">Delete</td>
+  </tr>
+</table>
+
+
+

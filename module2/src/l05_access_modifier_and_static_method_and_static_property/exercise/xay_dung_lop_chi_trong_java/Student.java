@@ -13,7 +13,11 @@ public class Student {
     }
 
     Student(){
+    }
 
+    public Student(String name, String classes) {
+        this.name = name;
+        this.classes = classes;
     }
 
     public String toString(){

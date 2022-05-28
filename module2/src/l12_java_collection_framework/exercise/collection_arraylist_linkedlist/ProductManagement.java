@@ -10,6 +10,7 @@ public class ProductManagement {
     private static Scanner scanner = new Scanner(System.in);
     private static List<Product> productList;
 
+
     static {
         productList = new ArrayList<>();
     }

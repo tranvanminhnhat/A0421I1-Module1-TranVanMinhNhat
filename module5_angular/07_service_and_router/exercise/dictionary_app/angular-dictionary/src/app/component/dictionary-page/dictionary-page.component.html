@@ -1,0 +1,9 @@
+<h1>Dictionary</h1>
+<div *ngFor="let word of words; index as i">
+  <p>{{i + 1}} : {{word.word}}</p>
+</div>
+<form [formGroup]= "wordForm" (ngSubmit)="submit()">
+  <input type="text" formControlName="word">
+  <input type="submit" value="Translate">
+</form>
+

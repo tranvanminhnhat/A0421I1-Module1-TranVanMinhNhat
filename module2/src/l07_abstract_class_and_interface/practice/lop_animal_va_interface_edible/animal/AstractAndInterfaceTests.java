@@ -6,12 +6,11 @@ import l07_abstract_class_and_interface.practice.lop_animal_va_interface_edible.
 import l07_abstract_class_and_interface.practice.lop_animal_va_interface_edible.fruits.Orange;
 
 
-public class AstractAndInterfaceTests {
+public class AstractAndInterfaceTests{
     public static void main(String[] args) {
         Animal[] animals = new Animal[2];
         animals[0] = new Tiger();
         animals[1] = new Chicken();
-
         for (Animal animal : animals){
             System.out.println(animal.makeSound());
 
@@ -28,3 +27,4 @@ public class AstractAndInterfaceTests {
         }
     }
 }
+

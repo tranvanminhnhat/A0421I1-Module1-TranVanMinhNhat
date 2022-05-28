@@ -6,11 +6,11 @@ import java.util.Scanner;
 
 public class ProductManagement {
     private static Scanner scanner = new Scanner(System.in);
-    private static List<Product> productList;
-
-    static {
-        productList = new ArrayList<>();
-    }
+    private static List<Product> productList = new ArrayList<>();
+//
+//    static {
+//        productList = new ArrayList<>();
+//    }
     
     public static void menu(){
         int choice = 0;
@@ -64,7 +64,7 @@ public class ProductManagement {
     }
 
     private static void display() {
-        productList = (List<Product>) ReadAndWriteFile.read("D:\\nhat_coder\\CodeGym\\GIT_HUB\\module2\\src\\l21_final_examination\\products.csv");
+        productList = (List<Product>) ReadAndWriteFile.read("D:\\MinhNhat_Coder\\CodeGym\\GIT_HUB\\module2\\src\\l21_final_examination\\products.csv");
         for (Product product : productList){
             System.out.println("-------------------------");
             System.out.println(product.toString());
@@ -85,7 +85,7 @@ public class ProductManagement {
             if (scanner.nextLine().equals("Yes")){
                 productList.remove(product);
                 System.out.println("Remove Successfully!!!");
-                ReadAndWriteFile.write(productList, "D:\\nhat_coder\\CodeGym\\GIT_HUB\\module2\\src\\l21_final_examination\\products.csv");
+                ReadAndWriteFile.write(productList, "D:\\MinhNhat_Coder\\CodeGym\\GIT_HUB\\module2\\src\\l21_final_examination\\products.csv");
             }else {
                 menu();
             }
@@ -96,7 +96,7 @@ public class ProductManagement {
 
     private static Product findById(int id) throws ProductNotFoundException {
         Product product = null;
-        productList = (List<Product>) ReadAndWriteFile.read("D:\\nhat_coder\\CodeGym\\GIT_HUB\\module2\\src\\l21_final_examination\\products.csv");
+        productList = (List<Product>) ReadAndWriteFile.read("D:\\MinhNhat_Coder\\CodeGym\\GIT_HUB\\module2\\src\\l21_final_examination\\products.csv");
         for (int i = 0; i < productList.size(); i++) {
             if (productList.get(i).getId() == id){
                 product = productList.get(i);
@@ -242,7 +242,7 @@ public class ProductManagement {
             }
 
             productList.add(new ImportedProduct(id, code, name, price, quantity, producer, importedPrice, province, importTax));
-            ReadAndWriteFile.write(productList, "D:\\nhat_coder\\CodeGym\\GIT_HUB\\module2\\src\\l21_final_examination\\products.csv");
+            ReadAndWriteFile.write(productList, "D:\\MinhNhat_Coder\\CodeGym\\GIT_HUB\\module2\\src\\l21_final_examination\\products.csv");
         }
     }
 }

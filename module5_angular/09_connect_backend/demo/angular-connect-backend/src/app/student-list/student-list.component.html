@@ -1,0 +1,68 @@
+<!--<a [routerLink]="['/student/create']">Create student</a>-->
+<!--<table border="1">-->
+<!--  <tr>-->
+<!--    <th>ID</th>-->
+<!--    <th>StudentName</th>-->
+<!--    <th>GroupName</th>-->
+<!--    <th>AreaName</th>-->
+<!--    <th>Instructor</th>-->
+<!--    <th>Email</th>-->
+<!--    <th>PhoneNumber</th>-->
+<!--    <th>Update</th>-->
+<!--    <th>Delete</th>-->
+<!--  </tr>-->
+<!--  &lt;!&ndash;  <tr th:each="${item}" var="">&ndash;&gt;-->
+<!--  &lt;!&ndash;  for(Student student: studentList)&ndash;&gt;-->
+<!--  <tr *ngFor="let student of studentList">-->
+<!--    <td>{{student.id}}</td>-->
+<!--    <td>{{student.studentName| uppercase}}</td>-->
+<!--    <td>{{student.groupName}}</td>-->
+<!--    <td>{{student.areaName}}</td>-->
+<!--    <td>{{student.instructor}}</td>-->
+<!--    <td>{{student.email}}</td>-->
+<!--    <td>{{student.phoneNumber}}</td>-->
+<!--    <th (click)="updateStudent(student)">Update</th>-->
+<!--    <th (click)="detailStudent(student)">Delete</th>-->
+<!--    <th></th>-->
+<!--  </tr>-->
+<!--</table>-->
+
+<!--<app-student-info></app-student-info>-->
+
+
+<table class="table table-striped table-bordered table-hover table-responsive-md">
+  <thead>
+  <tr>
+    <th colspan="8">
+      <h3 style="font-family: sans-serif; text-align: center;">Student List</h3>
+    </th>
+  </tr>
+  <tr style="background-color: #046056; color: #fff">
+    <th>ID</th>
+    <th>StudentName</th>
+    <th>GroupName</th>
+    <th>AreaName</th>
+    <th>Instructor</th>
+    <th>Email</th>
+    <th>PhoneNumber</th>
+    <th class="text-center">
+      <a style="color: #fff;" [routerLink]="['/student/create']"><i class="far fa-plus-square"></i></a>
+    </th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of studentList">
+      <td><p>{{student.id}}</p></td>
+      <td><p>{{student.studentName}}</p></td>
+      <td><p>{{student.groupName}}</p></td>
+      <td><p>{{student.areaName}}</p></td>
+      <td><p>{{student.instructor}}</p></td>
+      <td><p>{{student.email}}</p></td>
+      <td><p>{{student.phoneNumber}}</p></td>
+      <td class="text-center">
+        <a (click)="updateStudent(student)" style="color: #fff;"><i class="fas fa-edit text-primary"></i></a>
+        <a (click)="detailStudent(student)"><i class="far fa-trash-alt text-danger"></i></a>
+      </td>
+    </tr>
+  </tbody>
+</table>

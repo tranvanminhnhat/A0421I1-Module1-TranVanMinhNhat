@@ -7,6 +7,4 @@ public class Test {
         student.setClasses("C03");
         System.out.println(student.toString());
     }
-
-
 }

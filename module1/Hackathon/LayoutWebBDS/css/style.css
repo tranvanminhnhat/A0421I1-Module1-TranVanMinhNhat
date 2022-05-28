@@ -1,0 +1,206 @@
+
+.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 50px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 200px;
+    caret-color:red;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+}
+
+.search_icon{
+    height: 30px;
+    width: 30px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+}
+/*carousel with search*/
+.search-sec{
+    padding: 2rem;
+}
+.search-slt{
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+.wrn-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+@media  {
+    .search-sec{
+        background: rgba(26, 70, 104, 0.51);
+    }
+}
+/* The sidebar menu */
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    margin-top: 12%;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+/*background img*/
+.backgroundImg{
+    background-image: url(http://bds05.chonweb.vn/wp-content/uploads/2020/11/bg_breadcrumb.png);
+    background-size: cover;
+    background-position: center top;
+    padding: 25px 0px;
+    background-repeat: no-repeat;
+    min-height: 320px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    float: left;
+    flex-flow: column;
+}
+.title_full{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.title_full .title_page{
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+    font-family: "Roboto",sans-serif;
+    color: white;
+}
+/*Chat bot*/
+.chatIcon{
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+    z-index: 1000;
+    padding: 0;
+    font-size: 80px;
+    color: dodgerblue;
+    cursor: pointer;
+}
+.chatBox{
+    width: 400px;
+    height: 70vh;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    background:#dedede;
+    z-index: 1000;
+    transition: all 0.3s ease-out;
+    transform: scaleY(0);
+    border-radius: 7%;
+}
+.chatBox.active{
+    transform: scaleY(1);
+}
+#messages{
+    padding: 20px;
+}
+.my-conv-form-wrapper textarea{
+    height: 30px;
+    overflow: hidden;
+    resize: none;
+}
+.hidden{
+    display: none !important;
+}

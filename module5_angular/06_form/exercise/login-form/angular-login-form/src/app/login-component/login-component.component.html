@@ -1,0 +1,15 @@
+<h1>Login</h1>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate>
+  <div>
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" formControlName="email">
+  </div>
+  <div *ngIf="!loginForm.controls.email?.valid && (loginForm.controls.email?.dirty || loginForm.controls.email?.touched)">
+    Email is not valid
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input type="text" id="password" name="password" formControlName="password">
+  </div>
+  <button type="submit" [disabled]="!loginForm.valid" >Login</button>
+</form>

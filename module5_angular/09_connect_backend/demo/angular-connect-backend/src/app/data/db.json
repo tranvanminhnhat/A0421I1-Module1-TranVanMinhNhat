@@ -1,0 +1,31 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "studentName": "Minh Nf",
+      "groupName": "NHOM3",
+      "areaName": "qewr",
+      "instructor": "qwer",
+      "email": "qewr",
+      "phoneNumber": "qwer"
+    },
+    {
+      "id": "35324",
+      "studentName": "asasf",
+      "groupName": "asfas",
+      "areaName": "asfadsf",
+      "instructor": "asfasf",
+      "email": "asdfaf",
+      "phoneNumber": "asfadsf"
+    },
+    {
+      "id": "2314",
+      "studentName": "####",
+      "groupName": "NHOM8",
+      "areaName": "1234",
+      "instructor": "1243",
+      "email": "iiiii@gmail.com",
+      "phoneNumber": "0234234234"
+    }
+  ]
+}

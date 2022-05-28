@@ -1,0 +1,56 @@
+<div class="container-fluid">
+  <form [formGroup]="studentForm" (ngSubmit)="updateStudent()">
+    <div>
+      <h3 style="font-family: sans-serif; text-align: center;">Update
+        Student</h3>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label>ID</label>
+        <input type="text" class="form-control" formControlName="id" readonly>
+      </div>
+      <div class="form-group col-md-6">
+        <label>StudentName</label>
+        <input type="text" class="form-control" formControlName="studentName">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label>GroupName</label>
+        <input type="text" class="form-control" formControlName="groupName">
+        <div style="color: red" *ngIf="(studentForm.controls.groupName.hasError('pattern'))" >
+          GroupName must be NHOMx
+        </div>
+      </div>
+      <div class="form-group col-md-6">
+        <label>AreaName</label>
+        <input type="text" class="form-control" formControlName="areaName">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label>Instructor</label>
+        <input type="text" class="form-control" formControlName="instructor">
+      </div>
+      <div class="form-group col-md-6">
+        <label>Email</label>
+        <input type="text" class="form-control" formControlName="email">
+        <div style="color: red" *ngIf="(studentForm.controls.email.hasError('pattern'))" >
+          Email must be xxxxx@gmail.com
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-12">
+        <label>PhoneNumbe</label>
+        <input type="text" class="form-control" formControlName="phoneNumber">
+        <div style="color: red" *ngIf="(studentForm.controls.phoneNumber.hasError('pattern'))" >
+          PhoneNumber must be xxxx vs xxx is number
+        </div>
+      </div>
+    </div>
+    <button type="submit" style="background-color: #046056; color: #fff;"
+            class="btn">Update Student
+    </button>
+  </form>
+</div>
